@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="bg-red-00 absolute z-30 -top-10 -right-[120px]">
           <Glow />
         </div>
-        <div className=" w-[45%] bg-blu-300 absolute flex flex-col z-50  left-[7%] top-[15%]  justify-end ">
+        <div className=" w-[45%] bg-blu-300 absolute flex flex-col z-50  left-[7%] top-[14%]  justify-end ">
           <Image
             src={writeup}
             width={700}

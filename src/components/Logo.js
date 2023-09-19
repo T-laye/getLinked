@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import React from 'react';
-import logo from 'public/logo.svg';
-import Link from 'next/link';
+import Image from "next/image";
+import React from "react";
+import logo from "public/logo.svg";
+import Link from "next/link";
 
 export default function Logo({ height, width }) {
   return (
-    <div>
-      <Link href="/">
+    <Link href="/">
+      <div>
         <Image
           src={logo}
           alt="getLinked"
@@ -14,7 +14,7 @@ export default function Logo({ height, width }) {
           width={width}
           priority
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
