@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Glow() {
   return (
-    <div className=" opacity-[60%] ">
+    <div className=" opacity-[70%] ">
       <Image
         src={glow}
         width={500}

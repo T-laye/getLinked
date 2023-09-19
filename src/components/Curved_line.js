@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Curved() {
   return (
-    <div className="  ">
+    <span className="  ">
       <Image
         src={line}
         width={100}
@@ -13,6 +13,6 @@ export default function Curved() {
         // onClick={handleImageClick}
         className=" object-center w-[210px]  object-cove "
       />
-    </div>
+    </span>
   );
 }
