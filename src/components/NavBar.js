@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "./Button";
 
 export default function NavBar() {
   return (
-    <nav className="flex b-slate-500 items-center justify-between space-x-16 w-7/12">
-      <ul className="flex text-base space-x-14  bg-bue-500">
+    <nav className="flex bg-slate500 items-center w-6/12 ">
+      <ul className="flex text-base b-slate-900  justify-between w-full items-center  bg-bue-500">
         <li>
           <a href="">Timeline</a>
         </li>
@@ -16,8 +17,8 @@ export default function NavBar() {
         <li>
           <a href="">Contact</a>
         </li>
+        <Button />
       </ul>
-      <button className="btn primary-bg">Register</button>
     </nav>
   );
 }

@@ -5,10 +5,10 @@ import Layout from "src/layout/index";
 export default function Home() {
   return (
     <Layout className={``}>
-      <section className="border-b relative border-b-[#ffffff18] max-h-[85vh] h-[85vh] overflow-">
-        <div className="bg-red-00 absolute -top-[31%] left-[10%]">
+        <div className="bg-red-00 absolute -top-[18%] left-[10%]">
           <Glow />
         </div>
+      <section className="border-b relative border-b-[#ffffff18] max-h-[90vh] h-[90vh] overflow-hidden">
 
         <Hero />
       </section>

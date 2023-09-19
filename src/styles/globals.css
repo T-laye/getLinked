@@ -25,9 +25,12 @@ body {
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
-
+.myContainer {
+  max-width: 1256px;
+  margin: 0 auto;
+}
 .btn {
-  @apply h-11 w-36 rounded-sm;
+  @apply py-3 px-10  rounded-sm;
 }
 .btn:hover {
   @apply scale-95 duration-200;
