@@ -36,8 +36,8 @@ export default function Rules() {
             coding genius, a design maverick, or a concept wizard, you&apos;ll
             have the chance to transform your ideas into reality. Solving
             real-world problems, pushing the boundaries of technology, and
-            creating solutions that can change the world, that&apos;s what we're
-            all about!
+            creating solutions that can change the world, that&apos;s what
+            we&apos;re all about!
           </p>
         </div>
 

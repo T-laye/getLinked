@@ -48,8 +48,8 @@ export default function Judge() {
             coding genius, a design maverick, or a concept wizard, you&apos;ll
             have the chance to transform your ideas into reality. Solving
             real-world problems, pushing the boundaries of technology, and
-            creating solutions that can change the world, that&apos;s what we're
-            all about!
+            creating solutions that can change the world, that&apos;s what
+            we&apos;re all about!
           </p>
         </div>
         <div className="absolute right-5 top-6 w-2 lg:top-20 lg:right-20 lg:w-6">
