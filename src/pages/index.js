@@ -9,6 +9,7 @@ import Rules from "@/components/sections/Rules";
 import Judge from "@/components/sections/Judge";
 import FAQ from "@/components/sections/FAQ";
 import Timeline from "@/components/sections/Timeline";
+import MobileTImeline from "@/components/sections/MobileTImeline";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Judge />
       <FAQ />
       <Timeline />
+      <MobileTImeline />
     </Layout>
   );
 }
