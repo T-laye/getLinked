@@ -9,7 +9,7 @@ import Glow from "../Glow";
 
 export default function Judge() {
   return (
-    <section className="max-h-screen h-screen lg:min-h-[60vh] lg:h-[55vh] pb-10 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px-8 lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+    <section className="min-h-screen h-screen lg:min-h-[60vh] lg:h-[55vh] pb-10 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px-8 lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500 h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
         <div className=" max-h-[300px] h-full lg:hidden ">
           <Image
