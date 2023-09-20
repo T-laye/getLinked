@@ -8,6 +8,7 @@ import Intro from "@/components/sections/Intro";
 import Rules from "@/components/sections/Rules";
 import Judge from "@/components/sections/Judge";
 import FAQ from "@/components/sections/FAQ";
+import Timeline from "@/components/sections/Timeline";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Rules />
       <Judge />
       <FAQ />
+      <Timeline />
     </Layout>
   );
 }
