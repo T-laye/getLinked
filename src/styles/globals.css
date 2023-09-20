@@ -25,10 +25,7 @@ body {
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
-.myContainer {
-  max-width: 1256px;
-  margin: 0 auto;
-}
+
 .btn {
   @apply py-3 px-11  rounded-md;
 }
@@ -42,3 +39,12 @@ body {
 .btn:active {
   @apply scale-100 duration-200;
 }
+ @keyframes glitter {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; transform: scale(1.2); }
+      100% { opacity: 1; }
+    }
+
+    .glitter {
+      animation: glitter 0.5s infinite;
+    }
