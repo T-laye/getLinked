@@ -121,12 +121,12 @@ export default function Hero() {
         </div>
 
         {/* Mobile Image */}
-        <div className="bg-blue400 w-full lg:w-1/2 lg:h-full min-h-[50%] relative">
+        <div className="bg-blue400 max-w[600px] w-[100vw] lg:w-1/2 lg:h-full min-h-[50%] relative flex justify-center">
           <div
             style={{
               filter: "grayscale(100%)",
             }}
-            className="lg:hidden h-full bg-blu-300 w-fll  flex  justify-center itemdss "
+            className="lg:hidden h-full bg-blu-300 w-full  flex  justify-center place-self-center mx-auto itemdss "
           >
             <Image
               src={hackGuy}
@@ -134,7 +134,7 @@ export default function Hero() {
               height={800}
               alt="Hack Guy"
               // onClick={handleImageClick}
-              className=" object-center h-full bg-reen-900 w-ful  object-contain"
+              className=" object-center h-full bg-reen-900 w-full  object-contain"
             />
           </div>
           <div className="globe animate-pulse mix-blend-hard-light h-[85%] bg-blue300 absolute  z-40 opacity-80 right-10 top-0 lg:hidden flex justify-end ">
@@ -188,16 +188,16 @@ export default function Hero() {
           className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
         />
       </div>
-      <div className="bg-red-00 absolute opacity-50 z-30 -top-20 -right-[150px]">
+      <div className="bg-red-00 absolute opacity-50  -z-10  top-1 -left-10 lg:-top-20 lg:-right-[150px]">
         <Glow />
       </div>
-      <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%]">
+      <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%] left-28 top-20 w-3">
         <Star s={whiteStar} h={32} w={26} />
       </div>
-      <div className="absolute lg:right-[35%] lg:w-7 lg:top-[18%]">
+      <div className="absolute lg:right-[35%] lg:w-7 lg:top-[18%] right-8 top-20 w-2">
         <Star s={grayStar} h={32} w={26} />
       </div>
-      <div className="absolute lg:left-[40%] lg:w-7  lg:bottom-[20%]">
+      <div className="absolute lg:left-[40%] lg:w-7  lg:bottom-[20%] right-20 top-[275px] w-1.5">
         <Star s={grayStar} h={32} w={26} />
       </div>
     </section>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout className={``}>
       {/* HERO SECTION */}
-      <div className="bg-red800 absolute hidden lg:block lg:-top-[15%] lg:left-[15%]">
+      <div className="bg-red-800 left-0 absolute hidden lg:block lg:-top-[15%] lg:left-[15%]">
         <Glow />
       </div>
       {/* <section className="border-b relative border-b-[#ffffff18] max-h-[90vh] h-[88vh] overflow-hidden">
