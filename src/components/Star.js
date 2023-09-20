@@ -7,13 +7,14 @@ import Image from 'next/image'
 
 export default function Star({s, h, w}) {
   return (
-    <div className='animate-pulse'>
+    <div className={`w-full h-full animate-pulse`}>
       <Image
         src={s}
         alt="getLinked"
         height={h}
         width={w}
         priority
+        className={`w-full h-full`}
       />
     </div>
   );

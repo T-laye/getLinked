@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <Layout className={``}>
       {/* HERO SECTION */}
-      <div className="bg-red800 absolute hidden lg:block lg:-top-[20%] lg:left-[10%]">
+      <div className="bg-red800 absolute hidden lg:block lg:-top-[15%] lg:left-[15%]">
         <Glow />
       </div>
-      <section className="border-b relative border-b-[#ffffff18] max-h-[90vh] h-[88vh] overflow-hidden">
+      {/* <section className="border-b relative border-b-[#ffffff18] max-h-[90vh] h-[88vh] overflow-hidden">
         <div className="bg-ed-800 absolute -top-10 -left-20 lg:hidden">
           <Glow />
         </div>
@@ -35,7 +35,8 @@ export default function Home() {
         <div className="absolute left-[40%] bottom-[20%]">
           <Star s={grayStar} h={32} w={26} />
         </div>
-      </section>
+      </section> */}
+      <Hero />
     </Layout>
   );
 }

@@ -9,13 +9,12 @@ export default function NavBar() {
 
   const handleNav = () => {
     setOpenNav(!openNav);
-    console.log('iii');
-    
+    console.log("iii");
   };
 
   return (
     <>
-      <nav className="lg:flex items-center hidden w-6/12 ">
+      <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900  justify-between w-full items-center  bg-bue-500">
           <li>
             <a href="">Timeline</a>
@@ -46,9 +45,7 @@ export default function NavBar() {
           </div>
           <div
             className={`${
-              openNav
-                ? "h-screen duration-500 "
-                : "duration-500 h-0 "
+              openNav ? "h-screen duration-500 " : "duration-500 h-0 "
             } bg-[#150E2895]  absolute z-[100] left-0 top-0  right-0`}
           >
             <div
