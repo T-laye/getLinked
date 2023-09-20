@@ -11,9 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkBlue: '#150E28',
-        royalBlue: '#903AFF',
-        purple: '#D434FE',
+        darkBlue: "#150E28",
+        royalBlue: "#903AFF",
+        purple: "#D434FE",
+        pink: "#FF26B9",
       },
     },
   },

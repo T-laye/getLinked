@@ -7,6 +7,7 @@ import grayStar from "public/gray_star.svg";
 import Intro from "@/components/sections/Intro";
 import Rules from "@/components/sections/Rules";
 import Judge from "@/components/sections/Judge";
+import FAQ from "@/components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Intro />
       <Rules />
       <Judge />
+      <FAQ />
     </Layout>
   );
 }

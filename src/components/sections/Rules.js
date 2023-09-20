@@ -51,7 +51,7 @@ export default function Rules() {
       <div className="bg-ed-800 absolute -top-20 mix-blend-hard-light -z-10 lg:left-12 -left-12 ">
         <Glow />
       </div>
-      <div className="bg-ed-800 absolute bottom-64 -right-36 lg:-right-80 lg:-bottom-60 -z-10">
+      <div className="bg-ed-800 absolute bottom-64 -right-36 lg:-right-[30%] lg:-bottom-[50%] -z-10">
         <Glow />
       </div>
     </section>

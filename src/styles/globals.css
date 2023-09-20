@@ -30,9 +30,13 @@ body {
   margin: 0 auto;
 }
 .btn {
-  @apply py-3 px-11  rounded-sm;
+  @apply py-3 px-11  rounded-md;
 }
-.btn:hover {
+.btn--small {
+  @apply py-2.5 px-6  rounded-md;
+}
+.btn:hover,
+.btn--small:hover {
   @apply scale-95 duration-200;
 }
 .btn:active {

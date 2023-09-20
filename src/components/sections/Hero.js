@@ -100,7 +100,10 @@ export default function Hero() {
           className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
         />
       </div>
-      <div className="bg-red-00 absolute opacity-50 lg:hidden -z-10  top-1 -left-10 lg:-top-20 lg:-right-[150px]">
+      {/* <div className="bg-red-00 absolute opacity-50 -z-10  top-1 -left-10 lg:-top-20 lg:right-0">
+        <Glow />
+      </div> */}
+      <div className=" absolute opacity-50 z-10 hidden lg:block   -top-20 -right-36">
         <Glow />
       </div>
       <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%] left-28 top-20 w-3">
