@@ -11,29 +11,40 @@ import HeroTitle from "../HeroTitle";
 import Star from "../Star";
 import whiteStar from "public/white_star.svg";
 import grayStar from "public/gray_star.svg";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
     <section className="h-[vh] max-h-[92vh] lg:h-[87vh] lg:min-h-[87vh] relative border-b border-b-[#ffffff18] overflow-hidden">
       <div className="text-center lg:text-end mt-6 mb-7 lg:px-14">
-        <p
+        <div
           data-aos="fade-down"
-          className="italic font-bold text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl"
+          className="italic font-bold text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl relative"
         >
-          Igniting a Revolution in{" "}
-          <span className="relative">
-            HR Innovation
-            <span className="absolute -bottom-3 right-1">
-              <Curved />
-            </span>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Igniting a Revolution in HR Innovation")
+                .callFunction(() => {})
+                .pauseFor(2500)
+                .callFunction(() => {
+                  console.log("All strings were deleted");
+                })
+                .start();
+            }}
+          />
+          <span
+            data-aos="fade-right"
+            data-aos-delay="2000"
+            className="absolute lg:-bottom-4 -bottom-2 right-10 lg:right-1"
+          >
+            <Curved />
           </span>
-        </p>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row h-full container mx-auto lg:px-10">
-        <div
-          className="bg-red600 w-full lg:w-1/2 h-fit lg:h-full flex items-center justify-center lg:pb-16"
-        >
+        <div className="bg-red600 w-full lg:w-1/2 h-fit lg:h-full flex items-center justify-center lg:pb-16">
           <HeroTitle />
         </div>
 

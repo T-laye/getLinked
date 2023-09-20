@@ -11,7 +11,7 @@ export default function Curved() {
         height={100}
         alt="glow"
         // onClick={handleImageClick}
-        className=" object-center w-[210px]  object-cove "
+        className=" object-center w-[100px] lg:w-[210px]  object-cove "
       />
     </span>
   );
