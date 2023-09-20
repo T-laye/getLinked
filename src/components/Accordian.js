@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function () {
+export default function ({ question, answer }) {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div>
-      <div className="flex items-end w-full text-xs border-b border-b-purple pb-2">
-        <p>Can I work on a project I started before the hackathon?</p>
-        <div className="text-xl text-purple">+</div>
+    <div onClick={handleOpen} className="border-b border-b-purple pb-2">
+      <div className="flex items-center w-full justify-between text-xs lg:text-sm">
+        <p className="w-5/6 h-fit bg-reen-500">{question}</p>
+        <div className="text-2xl w-1/3 text-purple text-end">
+          {open ? "-" : "+"}
+        </div>
+      </div>
+      <div className={`${open ? "h-fit" : "h-0"} duration-150 overflow-hidden`}>
+        <p
+          className={`${
+            open ? "translate-y-0 " : " -translate-y-full"
+          } mt-1 text-sm text-purple font-semibold duration-150`}
+        >
+          {answer}
+        </p>
       </div>
     </div>
   );
