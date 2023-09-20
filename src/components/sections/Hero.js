@@ -11,8 +11,8 @@ import Button from "../Button";
 export default function Hero() {
   return (
     <div className="container  mx-auto lg:pl-14  bg-red400  ">
-      <div className="text-end mt-6 mb-7">
-        <p className="italic font-bold text-[26px]">
+      <div className="text-center lg:text-end mt-6 mb-7">
+        <p className="italic font-bold text-base  lg:text-[26px]">
           Igniting a Revolution in{" "}
           <span className="relative">
             HR Innovation{" "}
@@ -23,11 +23,14 @@ export default function Hero() {
           </span>
         </p>
       </div>
+
+{/* Desktop View */}
+
       <div className="flex h-full items-end ">
         <div className="bg-red-00 absolute z-30 -top-10 -right-[120px]">
           <Glow />
         </div>
-        <div className=" w-[45%] bg-blu-300 absolute flex flex-col z-50  left-[7%] top-[14%]  justify-end ">
+        <div className="hidden w-[45%] bg-blu-300 absolute lg:flex flex-col z-50  left-[7%] top-[14%]  justify-end ">
           <Image
             src={writeup}
             width={700}
@@ -57,7 +60,7 @@ export default function Hero() {
             </span>
           </div>
         </div>
-        <div className="lg:w-1/2 h-[95%]">
+        <div className="hidden lg:block lg:w-1/2 lg:h-[95%]">
           <div className="globe animate-pulse mix-blend-hard-light h-[85%] bg-blue300 absolute  z-40 opacity-80 right-10 flex justify-end ">
             <Image
               src={globe}

@@ -5,14 +5,14 @@ import grayStar from 'public/gray_star.svg'
 import blueStar from 'public/blue_star.svg'
 import Image from 'next/image'
 
-export default function Star() {
+export default function Star({s, h, w}) {
   return (
-    <div>
+    <div className='animate-pulse'>
       <Image
-        src={whiteStar}
+        src={s}
         alt="getLinked"
-        height={10}
-        width={10}
+        height={h}
+        width={w}
         priority
       />
     </div>

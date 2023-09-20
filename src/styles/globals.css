@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
 }
 .btn {
-  @apply py-3 px-10  rounded-sm;
+  @apply py-3 px-11  rounded-sm;
 }
 .btn:hover {
   @apply scale-95 duration-200;
