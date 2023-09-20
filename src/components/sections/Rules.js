@@ -8,7 +8,7 @@ import Glow from "../Glow";
 
 export default function Rules() {
   return (
-    <section className="min-h-screen pb-20 h-screen lg:min-h-[60vh] lg:h-[55vh] lg:p  flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+    <section className="min-h-screen pb-20 h-screen lg:min-h-[60vh] lg:h-[60vh] lg:p  flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500 h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
         <div className="  h-full flex w-full justify-center bg-geen-300 ">
           <Image
@@ -24,7 +24,7 @@ export default function Rules() {
           <Star s={whiteStar} h={32} w={26} />
         </div>
       </div>
-      <div className="bg-red300 h-1/2 relative lg:h-full lg:w-1/2 lg:flex flex-col  justify-center">
+      <div className="bg-red300 h-1/2 py-4 relative lg:h-full lg:w-1/2 lg:flex flex-col  justify-center">
         <h2 className="clash text-xl lg:text-[32px] lg:w-9/12 font-bold text-center place-self-center lg:text-start bg-green300">
           <span className="block">Rules and </span>
           <span className="text-purple block lg:mt-4">Guidelines</span>

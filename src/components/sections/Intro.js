@@ -9,9 +9,9 @@ import Glow from "../Glow";
 
 export default function Intro() {
   return (
-    <section className="min-h-screen h-screen lg:min-h-[60vh] lg:h-[55vh] pb-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px-8 lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+    <section className="min-h-screen h-screen lg:min-h-[60vh] lg:h-[60vh] pb-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500 h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
-        <div className=" max-h-[300px] h-full lg:hidden ">
+        <div className="  h-full lg:hidden ">
           <Image
             src={bigIdea}
             width={700}
@@ -35,9 +35,9 @@ export default function Intro() {
           <Star s={primaryStar} h={32} w={26} />
         </div>
       </div>
-      <div className="bg-red300 h-1/2 relative lg:h-full lg:w-1/2 lg:flex flex-col items-center justify-center">
+      <div className="bg-red300 h-1/2 relative py-4 lg:h-full lg:w-1/2 lg:flex flex-col  justify-center">
         <h2 className="clash text-xl lg:text-[32px] lg:w-9/12 font-bold text-center place-self-center lg:text-start bg-green300">
-          <span className="block">Introduction to getlinked </span>
+          <span className="block">Introduction to getlinked tech</span>
           <span className="text-purple block lg:mt-4">tech Hackathon 1.0</span>
         </h2>
         <div className="mt-3 lg:w-9/12 md:flex justify-center bggreen-300 place-self-center   px-8 lg:px-0">
