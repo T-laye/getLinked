@@ -14,7 +14,7 @@ export default function MobileTimeline() {
           >
             Timeline
           </h2>
-          <div className="lg:w-1/3 bg-red300">
+          <div className="md:w-2/3 lg:w-1/3 bg-red300">
             <p className="lg:text-sm leading-6 mt-4 text-center">
               Here is the breakdown of the time we anticipate using for the
               upcoming event.

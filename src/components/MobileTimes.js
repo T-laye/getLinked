@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MobileTimes({ topic, content, date, number }) {
   return (
-    <div className="mb-6 flex">
+    <div className="mb-6 flex md:w-2/3 mx-auto">
       <div className="flex flex-col space-y-1 border-l-[2px] pl-4  border-purple relative">
         <div className=" h-7 w-7 rounded-full flex flex-col justify-center items-center absolute -bottom-2 -left-[15px] -z-9 bg-darkBlue">
           <div
