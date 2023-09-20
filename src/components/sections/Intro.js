@@ -11,7 +11,11 @@ export default function Intro() {
   return (
     <section className="min-h-screen h-screen lg:min-h-[60vh] lg:h-[60vh] pb-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500 h-1/2 py-8 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
-        <div className="  h-full lg:hidden ">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          className="  h-full lg:hidden "
+        >
           <Image
             src={bigIdea}
             width={700}
@@ -21,7 +25,11 @@ export default function Intro() {
             className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
           />
         </div>
-        <div className="  h-full b-green-300 hidden lg:block">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="700"
+          className="  h-full b-green-300 hidden lg:block"
+        >
           <Image
             src={bigIdeaDesktop}
             width={700}
@@ -35,7 +43,11 @@ export default function Intro() {
           <Star s={primaryStar} h={32} w={26} />
         </div>
       </div>
-      <div className="bg-red300 h-1/2 relative py-4 lg:h-full lg:w-1/2 lg:flex flex-col  justify-center">
+      <div
+        data-aos="fade-left"
+        data-aos-delay="10"
+        className="bg-red300 h-1/2 relative py-4 lg:h-full lg:w-1/2 lg:flex flex-col  justify-center"
+      >
         <h2 className="clash text-xl lg:text-[32px] lg:w-9/12 font-bold text-center place-self-center lg:text-start bg-green300">
           <span className="block">Introduction to getlinked tech</span>
           <span className="text-purple block lg:mt-4">tech Hackathon 1.0</span>

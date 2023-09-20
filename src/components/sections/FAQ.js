@@ -14,7 +14,11 @@ import Accordian from "../Accordian";
 export default function FAQ() {
   return (
     <section className="min-h-screen    pb-16 lg:py-10 2xl:py-20 flex flex-col-reverse lg:flex-row-reverse lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
-      <div className="bg-ble-500  h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative ">
+      <div
+        data-aos="zoom-out"
+        data-aos-delay="100"
+        className="bg-ble-500  h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative "
+      >
         <div className=" bg-green300 lg:h-[100vh] pt-10 px-4  ">
           <Image
             src={faqGuy}
@@ -39,7 +43,11 @@ export default function FAQ() {
         </div>
       </div>
       <div className="bg-rd-300 h-1/2 relative mt-4 lg:h-full lg:w-1/2 lg:flex flex-col lg:items-center justify-center lg:px-20  pt-10 pb-10">
-        <h2 className="clash text-xl lg:text-[32px] lg:w-10/12 lg:px-7 font-bold text-center place-self-center lg:text-start lg:place-self-start bg-green-00">
+        <h2
+          data-aos="flip-up"
+          data-aos-delay="100"
+          className="clash text-xl lg:text-[32px] lg:w-10/12 lg:px-7 font-bold text-center place-self-center lg:text-start lg:place-self-start bg-green-00"
+        >
           <span className="block">Frequently Asked </span>
           <span className="text-purple block lg:mt-4">Question</span>
         </h2>

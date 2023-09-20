@@ -13,7 +13,11 @@ export default function Judge() {
   return (
     <section className="min-h-screen    pb-12 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500  h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
-        <div className=" bg-green300 lg:h-[70vh] pt-10 px-4  ">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="500"
+          className=" bg-green300 lg:h-[70vh] pt-10 px-4  "
+        >
           <Image
             src={judges}
             width={700}
@@ -66,7 +70,11 @@ export default function Judge() {
               "Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements."
             }
           />
-          <div className="flex justify-center mt-6 lg:mt-10 lg:justify-start  bg-gren-300 lg:place-self-start place-self-center">
+          <div
+            data-aos="flip-down"
+            data-aos-delay="100"
+            className="flex justify-center mt-6 lg:mt-10 lg:justify-start  bg-gren-300 lg:place-self-start place-self-center"
+          >
             <button className="btn--small lg:hidden primary-bg text-xs">
               Read More
             </button>
