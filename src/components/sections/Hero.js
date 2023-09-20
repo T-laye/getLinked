@@ -17,7 +17,7 @@ export default function Hero() {
     <section className="h-[vh] max-h-[92vh] lg:h-[87vh] lg:min-h-[87vh] relative border-b border-b-[#ffffff18] overflow-hidden">
       <div className="text-center lg:text-end mt-6 mb-7 lg:px-14">
         <p className="italic font-bold text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl">
-          Igniting a Revolution in
+          Igniting a Revolution in{" "}
           <span className="relative">
             HR Innovation
             <span className="absolute -bottom-3 right-1">
