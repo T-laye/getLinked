@@ -1,10 +1,14 @@
 import React from "react";
 import DesktopTimes from "../DesktopTimes";
+import grayStar from "public/gray_star.svg";
+import whiteStar from "public/white_star.svg";
+import blueStar from "public/blue_star.svg";
+import Star from "../Star";
 
 export default function Timeline() {
   return (
     <section className="min-h-screen h-sceen py-16 hidden lg:block">
-      <div className="min-h-sreen container mx-auto b-red-300 h-full">
+      <div className="min-h-sreen container mx-auto b-red-300 h-full relative">
         <div className="flex flex-col items-center">
           <h2
             // data-aos="flip-up"
@@ -72,6 +76,15 @@ export default function Timeline() {
             number={6}
             date={" November 18, 2023"}
           />
+        </div>
+        <div className="absolute left-60 top-48 w-5 ">
+          <Star s={blueStar} h={32} w={26} />
+        </div>
+        <div className="absolute right-40 bottom-[46%] w-5 ">
+          <Star s={whiteStar} h={32} w={26} />
+        </div>
+        <div className="absolute left-10 bottom-20 w-4 ">
+          <Star s={grayStar} h={32} w={26} />
         </div>
       </div>
     </section>

@@ -1,11 +1,14 @@
 import React from "react";
-import DesktopTimes from "../DesktopTimes";
+import grayStar from "public/gray_star.svg";
+import whiteStar from "public/white_star.svg";
+import blueStar from "public/blue_star.svg";
 import MobileTimes from "../MobileTimes";
+import Star from "../Star";
 
 export default function MobileTimeline() {
   return (
     <section className="min-h-screen h-sceen py-16 lg:hidden">
-      <div className="min-h-sreen container mx-auto px-4 b-red-300 h-full">
+      <div className="min-h-sreen container mx-auto px-8 b-red-300 h-full relative">
         <div className="flex flex-col items-center">
           <h2
             data-aos="flip-up"
@@ -70,6 +73,15 @@ export default function MobileTimeline() {
             number={6}
             date={" November 18, 2023"}
           />
+        </div>
+        <div className="absolute left-16 top-28 w-4 ">
+          <Star s={blueStar} h={32} w={26} />
+        </div>
+        <div className="absolute right-40 bottom-[42%] w-3 ">
+          <Star s={whiteStar} h={32} w={26} />
+        </div>
+        <div className="absolute left-5 -bottom-8 w-2 ">
+          <Star s={grayStar} h={32} w={26} />
         </div>
       </div>
     </section>
