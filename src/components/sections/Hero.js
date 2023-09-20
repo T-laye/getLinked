@@ -32,8 +32,6 @@ export default function Hero() {
 
       <div className="flex flex-col lg:flex-row h-full container mx-auto lg:px-10">
         <div
-          data-aos="fade-right"
-          data-aos-delay="1000"
           className="bg-red600 w-full lg:w-1/2 h-fit lg:h-full flex items-center justify-center lg:pb-16"
         >
           <HeroTitle />

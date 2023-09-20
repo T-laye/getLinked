@@ -9,7 +9,11 @@ import Button from "./Button";
 export default function HeroTitle() {
   return (
     <div>
-      <div className="clash w-full mt-10 lg:mt-0 flex flex-col lg:items-start center items-center lg:block bgpink-500">
+      <div
+        data-aos="zoom-in"
+        data-aos-delay="500"
+        className="clash w-full mt-10 lg:mt-0 flex flex-col lg:items-start center items-center lg:block bgpink-500"
+      >
         <h1 className="text-[32px] max-[295px]:text-[28px]  sm:text-[60px] xl:text-[80px] 2xl:text-8xl font-bold whitespace-nowrap">
           getlinked Te
           <span className="relative">
@@ -51,7 +55,7 @@ export default function HeroTitle() {
           </span>
         </h1>
       </div>
-      <div className=" xl:w-11/12 ">
+      <div data-aos="flip-down" data-aos-delay="700" className=" xl:w-11/12 ">
         <p className="sm:text-lg 2xl:text-2xl  z-[90] lg:mb-10 text-xs text-center lg:text-start px-12 lg:p-0 mb-6">
           Participate in getlinked tech Hackathon 2023 stand a chance to win a
           Big prize
@@ -59,7 +63,11 @@ export default function HeroTitle() {
         <div className="flex justify-center lg:justify-start  ">
           <Button />
         </div>
-        <div className="unica text-[48px] lg:text-[64px] mt-3 lg:mt-5 2xl:mt-20 flex space-x-2.5 justify-center lg:justify-start">
+        <div
+          data-aos="flip-up"
+          data-aos-delay="800"
+          className="unica text-[48px] lg:text-[64px] mt-3 lg:mt-5 2xl:mt-20 flex space-x-2.5 justify-center lg:justify-start"
+        >
           <span>
             00<span className="text-sm">H</span>
           </span>
