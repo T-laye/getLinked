@@ -10,7 +10,7 @@ export default function HeroTitle() {
   return (
     <div>
       <div className="clash w-full mt-10 lg:mt-0 flex flex-col lg:items-start center items-center lg:block bgpink-500">
-        <h1 className="text-[32px]  sm:text-[60px] xl:text-[80px] 2xl:text-8xl font-bold whitespace-nowrap">
+        <h1 className="text-[32px] max-[295px]:text-[28px]  sm:text-[60px] xl:text-[80px] 2xl:text-8xl font-bold whitespace-nowrap">
           getlinked Te
           <span className="relative">
             c
@@ -27,7 +27,7 @@ export default function HeroTitle() {
             h
           </span>
         </h1>
-        <h1 className="text-[32px] sm:text-[60px] xl:text-[80px] 2xl:text-8xl -mt-3 lg:-mt-8 2xl:mt-2 z-[90] font-bold whitespace-nowrap relative -ml-10 sm:-ml-16 lg:ml-0">
+        <h1 className="text-[32px] max-[295px]:text-[28px] sm:text-[60px] xl:text-[80px] 2xl:text-8xl -mt-3 lg:-mt-8 2xl:mt-2 z-[90] font-bold whitespace-nowrap relative -ml-10 sm:-ml-16 lg:ml-0">
           Hackathon <span className="text-purple">1.0</span>
           <span className="bg-green300 w-8 bottom-2 sm:w-[60px] lg:h-[60px] xl:h-[86px] xl:w-[86px] 2xl:bottom-1 absolute lg:bottom-4 ">
             <Image
