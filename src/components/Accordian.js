@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ({ question, answer }) {
+export default function Accordian({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
