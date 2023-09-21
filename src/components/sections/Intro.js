@@ -67,7 +67,7 @@ export default function Intro() {
           <Star s={purpleStar} h={32} w={26} />
         </div>
       </div>
-      <div className="bg-ed-800 absolute   -bottom-[220px] -left-12 lg:left-4 lg:-bottom-[300px] 2xl:-bottom-[480px]  ">
+      <div className="bg-ed-800 absolute mix-blend-hard-light bg-blend-hard-light   -bottom-[220px] -left-12 lg:left-4 lg:-bottom-[300px] 2xl:-bottom-[480px]  ">
         <Glow />
       </div>
     </section>

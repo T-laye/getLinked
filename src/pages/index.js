@@ -24,6 +24,9 @@ export default function Home() {
       <Intro />
       <Rules />
       <Judge />
+      <div className="bg-red800 opacit0 mix-blend-hard-light bg-blend-hard-light left-0  hidden lg:block lg:-top-[15%] lg:left-[15%]">
+        <Glow />
+      </div>
       <FAQ />
       <Timeline />
       <MobileTImeline />

@@ -26,12 +26,10 @@ body {
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
-/* html {
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
-  @apply bg-darkBlue text-white;
-} */
 
+.glow {
+  box-shadow: rgba(72, 135, 202, 0.8) 0 0 100px 100px;
+}
 .btn {
   @apply py-3 px-11  rounded-md;
 }

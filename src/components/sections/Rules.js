@@ -60,10 +60,10 @@ export default function Rules() {
       <div className="absolute left-28 lg:hidden bottom-10 w-3 ">
         <Star s={whiteStar} h={32} w={26} />
       </div>
-      <div className="bg-ed-800 absolute -top-52 mix-blend-hard-light bg-blend-hard-light -z-10 lg:left-12 -left-12 ">
+      <div className="bg-ed-800 absolute -top-52 mix-blend-hard-light  -z-10 lg:left-12 -left-12 ">
         <Glow />
       </div>
-      <div className="bg-ed-800 absolute  bottom-64 mix-blend-hard-light bg-blend-hard-light -right-36 lg:-right-[30%] lg:-bottom-[50%] z-10">
+      <div className="bg-ed-800 absolute  bottom-64 mix-blend-overlay  -right-36 lg:-right-[30%] lg:-bottom-[50%] -z-10">
         <Glow />
       </div>
     </section>
