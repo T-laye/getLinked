@@ -12,6 +12,7 @@ import Star from "../Star";
 import whiteStar from "public/white_star.svg";
 import grayStar from "public/gray_star.svg";
 import Typewriter from "typewriter-effect";
+import glow from "public/Purple-Lens-Flare-PNG.png";
 
 export default function Hero() {
   return (
@@ -66,6 +67,18 @@ export default function Hero() {
               // onClick={handleImageClick}
               className=" object-center h-full bg-reen-900 w-full  object-contain"
             />
+            <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute lg:hidden  z-10  bottom-20 -right-10 ">
+              <div className=" lg:block opacity-[100%] mix-blend-hard-light bg-blend-hard-light">
+                <Image
+                  src={glow}
+                  width={500}
+                  height={500}
+                  alt="glow"
+                  // onClick={handleImageClick}
+                  className=" object-center w-[350px] lg:w-[600px] 2xl:w-[800px]"
+                />
+              </div>
+            </div>
           </div>
           <div
             data-aos="zoom-out"
@@ -130,11 +143,18 @@ export default function Hero() {
       <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute hidden lg:block  z-10  -top-12 -right-32 ">
         <Glow />
       </div>
-      <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute lg:hidden  z-10  bottom-28 -right-10 ">
-        <Glow />
-      </div>
+
       <div className=" absolute  mix-blend-hard-light bg-blend-hard-light -z-10 lg:hidden  top-4 -left-14 ">
-        <Glow />
+        <div className=" lg:block opacity-[%] mix-blend-hard-light bg-blend-hard-light">
+          <Image
+            src={glow}
+            width={500}
+            height={500}
+            alt="glow"
+            // onClick={handleImageClick}
+            className=" object-center w-[350px] lg:w-[600px] 2xl:w-[800px]"
+          />
+        </div>
       </div>
       <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%] left-28 top-20 w-3">
         <Star s={whiteStar} h={32} w={26} />

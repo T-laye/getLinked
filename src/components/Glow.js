@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Glow() {
   return (
     <>
-      <div className=" lg:block opacity-[100%] mix-blend-hard-light bg-blend-hard-light">
+      <div className=" lg:block opacity-[75%] mix-blend-hard-light bg-blend-hard-light">
         <Image
           src={glow}
           width={500}
