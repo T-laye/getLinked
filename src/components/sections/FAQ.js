@@ -13,7 +13,7 @@ import Accordian from "../Accordian";
 
 export default function FAQ() {
   return (
-    <section className="min-h-screen    pb-16 lg:py-10 2xl:py-20 flex flex-col-reverse lg:flex-row-reverse lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+    <section className="min-h-screen    pb-16 lg:py-10 2xl:py-20 flex flex-col-reverse lg:flex-row-reverse lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] overflow-x-hidden">
       <div
         data-aos="zoom-out"
         data-aos-delay="100"
@@ -102,6 +102,9 @@ export default function FAQ() {
         <div className="absolute left-10 top-6 w-4 lg:-top-[5%] lg:left-[10%] lg:w-7">
           <Star s={blueStar} h={32} w={26} />
         </div>
+      </div>
+      <div className=" absolute z-10 -top-64 -right-36 lg:-right-60 lg:-top-72">
+        <Glow />
       </div>
     </section>
   );

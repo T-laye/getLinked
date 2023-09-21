@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
       offset: 50, 
       duration: 700, 
       easing: "ease", 
-      once: true,
+      once: false,
       mirror: false, 
     });
   }, []); 

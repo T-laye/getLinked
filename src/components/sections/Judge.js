@@ -87,7 +87,7 @@ export default function Judge() {
           <Star s={whiteStar} h={32} w={26} />
         </div>
       </div>
-      <div className="bg-ed-800 absolute bottom-10 -z-10 -right-48 lg:-right-[10%] lg:-bottom-[30%] ">
+      <div className="bg-ed-800 absolute bottom-10 -z-10 -right-48 lg:-right-[18%] 2xl:-right-[10%] lg:-bottom-[30%] ">
         <Glow />
       </div>
       <div className="bg-ed-800 absolute top-24 -z-10 -left-[10%] lg:left-[0%] lg:top-[30%] ">

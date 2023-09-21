@@ -13,6 +13,7 @@
 .primary-bg {
   background-image: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
 }
+
 .unica {
   font-family: "Unica One", cursive;
 }
@@ -25,6 +26,11 @@ body {
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
+/* html {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  @apply bg-darkBlue text-white;
+} */
 
 .btn {
   @apply py-3 px-11  rounded-md;
@@ -39,12 +45,25 @@ body {
 .btn:active {
   @apply scale-100 duration-200;
 }
- @keyframes glitter {
-      0% { opacity: 1; }
-      50% { opacity: 0.5; transform: scale(1.2); }
-      100% { opacity: 1; }
-    }
+@keyframes glitter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-    .glitter {
-      animation: glitter 0.5s infinite;
-    }
+.glitter {
+  animation: glitter 0.5s infinite;
+}
+
+.bg-image {
+  background: url("../../public/images/reward_bg.png"),
+    #150E28 0px -0.083px / 100% 109.967% no-repeat;
+  background-blend-mode: color-burn;
+}

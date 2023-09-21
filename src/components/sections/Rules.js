@@ -11,7 +11,7 @@ export default function Rules() {
     <section
       data-aos="zoom-in"
       data-aos-delay=""
-      className="min-h-screen pb-20 h-screen lg:min-h-[60vh] lg:h-[60vh] lg:p  flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] "
+      className="min-h-screen pb-20 h-screen lg:min-h-[60vh] lg:h-[60vh]   flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] "
     >
       <div
         data-aos="fade-down"
@@ -60,10 +60,10 @@ export default function Rules() {
       <div className="absolute left-28 lg:hidden bottom-10 w-3 ">
         <Star s={whiteStar} h={32} w={26} />
       </div>
-      <div className="bg-ed-800 absolute -top-20 mix-blend-hard-light -z-10 lg:left-12 -left-12 ">
+      <div className="bg-ed-800 absolute -top-52 mix-blend-hard-light bg-blend-hard-light -z-10 lg:left-12 -left-12 ">
         <Glow />
       </div>
-      <div className="bg-ed-800 absolute bottom-64 -right-36 lg:-right-[30%] lg:-bottom-[50%] -z-10">
+      <div className="bg-ed-800 absolute  bottom-64 mix-blend-hard-light bg-blend-hard-light -right-36 lg:-right-[30%] lg:-bottom-[50%] z-10">
         <Glow />
       </div>
     </section>

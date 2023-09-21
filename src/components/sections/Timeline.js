@@ -25,9 +25,9 @@ export default function Timeline() {
           </div>
         </div>
         <div className="mt-24">
-          <div className=" flex justify-end bg-emerald400 mr1 w-1/2">
-            <div className="w-[5px] h-24 mx-uto bg-purple"></div>
-          </div>
+          {/* <div className=" flex justify-end bg-eerald-400 ml-0.5 w-1/2">
+            <div  className="w-[6px] h-24 mx-uto bg-purple"></div>
+          </div> */}
           <DesktopTimes
             topic={"Hackathon Announcement"}
             content={

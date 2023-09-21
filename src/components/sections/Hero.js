@@ -15,7 +15,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
-    <section className="h-[vh] max-h-[92vh] lg:h-[87vh] lg:min-h-[87vh] relative border-b border-b-[#ffffff18] overflow-hidden">
+    <section className="h-[vh] max-h-[92vh] lg:h-[87vh] lg:min-h-[87vh] relative border-b border-b-[#ffffff18] overflow-hidden ">
       <div className="text-center lg:text-end mt-6 mb-7 lg:px-14">
         <div
           data-aos="fade-down"
@@ -36,7 +36,7 @@ export default function Hero() {
           <span
             data-aos="fade-right"
             data-aos-delay="2000"
-            className="absolute lg:-bottom-4 -bottom-2 right-10 lg:right-1"
+            className="absolute lg:-bottom-4 -bottom-2 right-8 lg:right-1 2xl:right-8"
           >
             <Curved />
           </span>
@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         {/* Mobile Image */}
-        <div className="bg-blue400 max-w[600px] w-[100vw] lg:w-1/2 lg:h-full min-h-[50%] relative flex justify-center">
+        <div className="bg-blue400 max-w[600px] w-[100vw] lg:w-1/2 lg:h-full min-h-[50%] relative flex justify-center pt-10">
           <div
             style={{
               filter: "grayscale(100%)",
@@ -70,7 +70,7 @@ export default function Hero() {
           <div
             data-aos="zoom-out"
             data-aos-delay="500"
-            className="globe animate-pulse mix-blend-hard-light h-[85%] bg-blue300 absolute  z-40 opacity-80 right-10 top-0 lg:hidden flex justify-end "
+            className="globe animate-pulse mix-blend-hard-light h-[75%] bg-blue300 absolute  z-40 opacity-80 right-8 top-11 lg:hidden flex justify-end "
           >
             <Image
               src={globe}
@@ -81,8 +81,8 @@ export default function Hero() {
               className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
             />
           </div>
-          <div className="bg-ed-800 absolute lg:hidden -top-20 -right-20  lg:-top-[15%] lg:left-[15%]">
-            <Glow />
+          <div className="bg-ed-800 absolute  -top-12 mix-blend-hard-light bg-blend-hard-light opacity-70 -right-16  lg:-top-[15%] lg:left-[40%]">
+            {/* <Glow /> */}
           </div>
         </div>
       </div>
@@ -127,10 +127,13 @@ export default function Hero() {
           className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
         />
       </div>
-      {/* <div className="bg-red-00 absolute opacity-50 -z-10  top-1 -left-10 lg:-top-20 lg:right-0">
+      <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute hidden lg:block  z-10  -top-12 -right-32 ">
         <Glow />
-      </div> */}
-      <div className=" absolute opacity-50 z-10 hidden lg:block   -top-20 -right-36">
+      </div>
+      <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute lg:hidden  z-10  bottom-28 -right-10 ">
+        <Glow />
+      </div>
+      <div className=" absolute  mix-blend-hard-light bg-blend-hard-light -z-10 lg:hidden  top-4 -left-14 ">
         <Glow />
       </div>
       <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%] left-28 top-20 w-3">
