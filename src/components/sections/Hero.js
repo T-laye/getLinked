@@ -82,7 +82,7 @@ export default function Hero() {
               className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
             />
           </div>
-          <div className="bg-ed-800 absolute  -top-12 mix-blend-hard-light bg-blend-hard-light opacity-70 -right-16  lg:-top-[15%] lg:left-[40%]">
+          <div className="bg-ed-800 absolute  -top-12 mix-blend-hard-light bg-blend-hard-light opacity-70 -right-20  lg:-top-[15%] lg:left-[40%]">
             <Glow />
           </div>
         </div>
