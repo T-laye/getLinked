@@ -83,7 +83,7 @@ export default function Hero() {
             />
           </div>
           <div className="bg-ed-800 absolute  -top-12 mix-blend-hard-light bg-blend-hard-light opacity-70 -right-20  lg:-top-[15%] lg:left-[40%]">
-            <Glow />
+            {/* <Glow /> */}
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function Hero() {
         <Glow />
       </div>
       <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute lg:hidden  z-10  bottom-28 -right-10 ">
-        <Glow />
+        {/* <Glow /> */}
       </div>
       <div className=" absolute  mix-blend-hard-light bg-blend-hard-light -z-10 lg:hidden  top-4 -left-14 ">
         <div className=" lg:block opacity-[%] mix-blend-hard-light bg-blend-hard-light">
