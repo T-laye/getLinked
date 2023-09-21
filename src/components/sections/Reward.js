@@ -5,7 +5,7 @@ import silver from "public/images/silver_medal.png";
 import bronze from "public/images/bronze_medal.svg";
 import gold from "public/images/gold_medal.svg";
 import whiteStar from "public/white_star.svg";
-import purpleStar from "public/purple_star.svg";
+import purpleStar from "public/primaryStar.svg";
 import grayStar from "public/gray_star.svg";
 import Star from "../Star";
 import Glow from "../Glow";
@@ -109,6 +109,21 @@ export default function Reward() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute left-14 top-10 w-2 lg:top-20 lg:left-48 lg:w-4">
+        <Star s={purpleStar} h={32} w={26} />
+      </div>
+      <div className="absolute right-28 top-20 w-2.5 lg:top-28 lg:right-[31%] lg:w-4">
+        <Star s={purpleStar} h={32} w={26} />
+      </div>
+      <div className="absolute left-14 bottom-96 w-3 lg:bottom-40 lg:left-64 lg:w-3">
+        <Star s={whiteStar} h={32} w={26} />
+      </div>
+      <div className="absolute right-16 bottom-80 w-2.5 lg:top-40 lg:right-24 lg:w-4">
+        <Star s={whiteStar} h={32} w={26} />
+      </div>
+      <div className="absolute right-36 bottom-10 w-2.5 lg:bottom-20 lg:right-72 lg:w-4">
+        <Star s={grayStar} h={32} w={26} />
       </div>
       <div className="bg-red800 absolute  lg:-bottom-10 bottom-8 z-9 -right-48 lg:-right-96">
         <Glow />
