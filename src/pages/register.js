@@ -55,8 +55,8 @@ export default function Contact() {
       <section className="container pb-20 px-5 mx-auto lg:px-12 pt-10  ">
         <div className="lg:hidden">
           <div
-            // data-aos="fade-left"
-            // data-aos-delay="500"
+            data-aos="fade-left"
+            data-aos-delay="500"
             className="text-purple text-base font-bold px-10"
           >
             Register
@@ -85,8 +85,8 @@ export default function Contact() {
             <div className="bg-reen-300  mx-auto ">
               <div className="hidden lg:block">
                 <div
-                  // data-aos="fade-left"
-                  // data-aos-delay="500"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
                   className="text-purple text-[32px] font-bold "
                 >
                   Register
@@ -94,10 +94,10 @@ export default function Contact() {
               </div>
               <div className="flex items-end lg:justify-start justify-center space-x-3">
                 <p className=" text-xs whitespace-nowrap">
-                  Be part of this movement!
+                  Be part of this movement
                 </p>
                 <div
-                  // data-aos="zoom-in"
+                  data-aos="fade-left"
                   className="w-20 pb-1"
                 >
                   <Image

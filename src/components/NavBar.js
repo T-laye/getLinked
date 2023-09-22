@@ -48,7 +48,7 @@ export default function NavBar() {
           <div
             className={`${
               openNav ? "h-screen duration-500 " : "duration-500 h-0 "
-            } bg-[#150E2895]  absolute z-[100] left-0 top-0  right-0`}
+            } bg-[#150E2895]  absolute z-[100] left-0 top-0 bottom-0 right-0`}
           >
             <div
               className={`${
