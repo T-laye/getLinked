@@ -81,7 +81,7 @@ export default function Contact() {
 
           {/* Form */}
 
-          <div className="bg-red-00 lg:mt0  lg:w-[617px] lg:py-10 px-10 lg:px-12 form-bg  ">
+          <div className="bg-red-00 lg:mt0  lg:w-[617px] lg:py-10 px-4 lg:px-12 form-bg  ">
             <div className="bg-reen-300  mx-auto ">
               <div className="hidden lg:block">
                 <div
@@ -93,7 +93,9 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-end lg:justify-start justify-center space-x-3">
-                <p className=" text-xs">Be part of this movement!</p>
+                <p className=" text-xs whitespace-nowrap">
+                  Be part of this movement!
+                </p>
                 <div
                   // data-aos="zoom-in"
                   className="w-20 pb-1"
