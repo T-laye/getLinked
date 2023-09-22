@@ -14,11 +14,11 @@ export default function HeroTitle() {
         data-aos-delay="500"
         className="clash w-full mt-10 lg:mt-0 flex flex-col lg:items-start center items-center lg:block bgpink-500"
       >
-        <h1 className="text-[32px] max-[295px]:text-[28px]  sm:text-[60px] xl:text-[80px] 2xl:text-8xl font-bold whitespace-nowrap">
+        <h1 className="text-[32px] max-[295px]:text-[28px]  sm:text-[60px] xl:text-[72px] 2xl:text-8xl font-bold whitespace-nowrap">
           getlinked Te
           <span className="relative">
             c
-            <span className="bg-blue300 h-[24px] sm:h-[56px] xl:h-[73px]  absolute  z-[90] -top-[86%] 2xl:-top-[60%] right-2 ">
+            <span className="bg-blue300 h-[24px] sm:h-[56px] xl:h-[73px]  absolute  z-[90] -top-[90%] 2xl:-top-[60%] right-2 ">
               <Image
                 src={bulb}
                 width={700}
@@ -31,7 +31,7 @@ export default function HeroTitle() {
             h
           </span>
         </h1>
-        <h1 className="text-[32px] max-[295px]:text-[28px] sm:text-[60px] xl:text-[80px] 2xl:text-8xl -mt-3 lg:-mt-8 2xl:mt-2 z-[90] font-bold whitespace-nowrap relative -ml-10 sm:-ml-16 lg:ml-0">
+        <h1 className="text-[32px] max-[295px]:text-[28px] sm:text-[60px] xl:text-[72px] 2xl:text-8xl -mt-3 lg:-mt-8 2xl:mt-2 z-[90] font-bold whitespace-nowrap relative -ml-10 sm:-ml-16 lg:ml-0">
           Hackathon <span className="text-purple">1.0</span>
           <span className="bg-green300 w-8 bottom-2 sm:w-[60px] lg:h-[60px] xl:h-[86px] xl:w-[86px] 2xl:bottom-1 absolute lg:bottom-4 ">
             <Image
@@ -56,7 +56,7 @@ export default function HeroTitle() {
         </h1>
       </div>
       <div data-aos="flip-down" data-aos-delay="700" className=" xl:w-11/12 ">
-        <p className="sm:text-lg 2xl:text-2xl  z-[90] lg:mb-10 text-xs text-center lg:text-start px-12 lg:p-0 mb-6">
+        <p className="sm:text-lg 2xl:text-2xl  z-[90] lg:mb-10 text-xs text-center lg:text-start px-12 lg:pl-0 lg:pr-10 mb-6">
           Participate in getlinked tech Hackathon 2023 stand a chance to win a
           Big prize
         </p>
@@ -64,9 +64,9 @@ export default function HeroTitle() {
           <Button />
         </div>
         <div
-          data-aos="flip-up"
+        //   data-aos="flip-up"
           data-aos-delay="800"
-          className="unica text-[48px] lg:text-[64px] mt-3 lg:mt-5 2xl:mt-20 flex space-x-2.5 justify-center lg:justify-start"
+          className="unica text-[48px] lg:text-[64px] mt-3 lg:mt-10 2xl:mt-20 flex space-x-2.5 justify-center lg:justify-start"
         >
           <span>
             00<span className="text-sm">H</span>

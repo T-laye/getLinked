@@ -22,13 +22,56 @@
 }
 
 body {
+  background-color: #150e28;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
 
+input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @apply h-12 w-full px-6 text-base outline-none focus:border focus:border-purple focus:outline-none   duration-300 caret-purple lg:h-[47px] placeholder:text-[#FFFFFF40] mb-1;
+}
+
+.reg-input,
+select {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @apply h-10 w-full px-6 text-base outline-none focus:border focus:border-purple focus:outline-none   duration-300 caret-purple lg:h-[47px] placeholder:text-[#FFFFFF40];
+}
+
+option {
+  @apply bg-darkBlue text-xs;
+}
+
+textarea {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @apply h-40 text-base caret-purple  focus:border-purple focus:border outline-none focus:outline-none  px-6 pt-4 duration-300 w-full resize-none lg:h-[119px] placeholder:text-[#FFFFFF40];
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
 .glow {
   box-shadow: rgba(72, 135, 202, 0.8) 0 0 100px 100px;
+}
+
+@media (min-width: 1024px) {
+  .form-bg {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 .btn {
   @apply py-3 px-11  rounded-md;
@@ -62,6 +105,7 @@ body {
 
 .bg-image {
   background: url("../../public/images/reward_bg.png"),
-    #150E28 0px -0.083px / 100% 109.967% no-repeat;
+    #150e28 0px -0.083px / 100% 109.967% no-repeat;
   background-blend-mode: color-burn;
+  background-size: cover;
 }

@@ -9,7 +9,7 @@ export default function DesktopTimes({ date, topic, content, number }) {
             <div className="bg-bue-400 w-1/2">
               <div
                 data-aos="fade-down"
-                data-aos-delay="400"
+                data-aos-delay="100"
                 className="flex items-end flex-col pr-[86px] "
               >
                 <h3 className="text-purple text-2xl font-bold text-end">
@@ -68,7 +68,7 @@ export default function DesktopTimes({ date, topic, content, number }) {
             </div>
             <div
               data-aos="fade-down"
-              data-aos-delay="400"
+              data-aos-delay="100"
               className="bg-orage-400 flex flex-col w-1/2 items-start pl-[86px]"
             >
               <h3 className="text-purple text-2xl font-bold text-start">

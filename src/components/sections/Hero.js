@@ -16,36 +16,38 @@ import glow from "public/Purple-Lens-Flare-PNG.png";
 
 export default function Hero() {
   return (
-    <section className="h-[vh] max-h-[92vh] lg:h-[87vh] lg:min-h-[87vh] relative border-b border-b-[#ffffff18] overflow-hidden ">
+    <section className="h-[vh] max-md:max-h-[92vh]  lg:min-h-[87vh] relative border-b border-b-[#ffffff18]  overflow-hidden">
       <div className="text-center lg:text-end mt-6 mb-7 lg:px-14">
         <div
           data-aos="fade-down"
-          className="italic font-bold text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl relative"
+          className="italic font-bold text-base sm:text-xl   bg-geen-400 lg:text-2xl xl:text-4xl 2xl:text-5xl "
         >
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Igniting a Revolution in HR Innovation")
-                .callFunction(() => {})
-                .pauseFor(2500)
-                .callFunction(() => {
-                  console.log("All strings were deleted");
-                })
-                .start();
-            }}
-          />
-          <span
-            data-aos="fade-right"
-            data-aos-delay="2000"
-            className="absolute lg:-bottom-4 -bottom-2 right-8 lg:right-1 2xl:right-8"
-          >
-            <Curved />
-          </span>
+          <div className="bg-red-00 w-fit lg:w-full relative mx-auto">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Igniting a Revolution in HR Innovation")
+                  .callFunction(() => {})
+                  .pauseFor(2500)
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  })
+                  .start();
+              }}
+            />
+            <span
+              data-aos="fade-right"
+              data-aos-delay="2000"
+              className="absolute lg:-bottom-4 -bottom-2 right-2 lg:right-1 2xl:right-8"
+            >
+              <Curved />
+            </span>
+          </div>
         </div>
       </div>
 
       <div className="flex flex-col lg:flex-row h-full container mx-auto lg:px-10">
-        <div className="bg-red600 w-full lg:w-1/2 h-fit lg:h-full flex items-center justify-center lg:pb-16">
+        <div className="bg-red600 lg:mt-14 2xl:mt-28 w-full lg:w-1/2 h-fit lg:h-full flex items-center justify-center lg:pb-16">
           <HeroTitle />
         </div>
 
@@ -55,9 +57,9 @@ export default function Hero() {
             style={{
               filter: "grayscale(100%)",
             }}
-            data-aos="zoom-in"
+            // data-aos="zoom-in"
             data-aos-delay="50"
-            className="lg:hidden h-full bg-blu-300 w-full  flex  justify-center place-self-center mx-auto itemdss "
+            className="lg:hidden h-full bg-blu-300 w-full  flex  justify-center place-self-center mx-auto md:h-1/2 md:w-1/2"
           >
             <Image
               src={hackGuy}
@@ -65,13 +67,13 @@ export default function Hero() {
               height={800}
               alt="Hack Guy"
               // onClick={handleImageClick}
-              className=" object-center h-full bg-reen-900 w-full  object-contain"
+              className=" object-center h-full bg-reen-900 w-full   object-contain"
             />
           </div>
           <div
-            data-aos="zoom-out"
+            // data-aos="zoom-out"
             data-aos-delay="500"
-            className="globe animate-pulse mix-blend-hard-light h-[75%] bg-blue300 absolute  z-40 opacity-80 right-8 top-11 lg:hidden flex justify-end "
+            className="globe animate-pulse mix-blend-hard-light h-[75%] bg-blue300 absolute  z-40 opacity-80 right-8 top-11 md:right-20 lg:hidden flex justify-end "
           >
             <Image
               src={globe}
@@ -81,9 +83,6 @@ export default function Hero() {
               // onClick={handleImageClick}
               className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
             />
-          </div>
-          <div className="bg-ed-800 absolute  -top-12 mix-blend-hard-light bg-blend-hard-light opacity-70 -right-20  lg:-top-[15%] lg:left-[40%]">
-            {/* <Glow /> */}
           </div>
         </div>
       </div>
@@ -127,24 +126,6 @@ export default function Hero() {
           // onClick={handleImageClick}
           className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
         />
-      </div>
-      <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute hidden lg:block  z-10  -top-12 -right-32 ">
-        <Glow />
-      </div>
-      <div className="bg-red-00 mix-blend-hard-light bg-blend-hard-light absolute lg:hidden  z-10  bottom-28 -right-10 ">
-        {/* <Glow /> */}
-      </div>
-      <div className=" absolute  mix-blend-hard-light bg-blend-hard-light -z-10 lg:hidden  top-4 -left-14 ">
-        <div className=" lg:block opacity-[%] mix-blend-hard-light bg-blend-hard-light">
-          <Image
-            src={glow}
-            width={500}
-            height={500}
-            alt="glow"
-            // onClick={handleImageClick}
-            className=" object-center w-[350px] lg:w-[600px] 2xl:w-[800px]"
-          />
-        </div>
       </div>
       <div className="absolute lg:left-[15%] lg:w-7 lg:top-[8%] left-28 top-20 w-3">
         <Star s={whiteStar} h={32} w={26} />

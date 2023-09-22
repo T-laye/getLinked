@@ -24,10 +24,46 @@ export default function Timeline() {
             </p>
           </div>
         </div>
-        <div className="mt-24">
-          {/* <div className=" flex justify-end bg-eerald-400 ml-0.5 w-1/2">
-            <div  className="w-[6px] h-24 mx-uto bg-purple"></div>
-          </div> */}
+        <div className="mt-1">
+          <div className="">
+            <div className="bg-gren-300 flex items-center justify-center">
+              <div className="bg-bue-400 w-1/2">
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  className="flex items-end flex-col pr-[86px] "
+                >
+                  <h3 className="text-purple text-2xl font-bold text-end">
+                    {/* {topic} */}
+                  </h3>
+                  <p className="text-sm text-end w-4/5">
+                    {/* {content} */}
+                    </p>
+                </div>
+              </div>
+              <div className="bg-lie-400 w1/3 flex flex-col items-center ">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="0"
+                  className="h-14 w-14 my-3  rounded-full text-2xl font-bold flex items-center justify-center"
+                >
+                  {/* {number} */}
+                </div>
+                <div className="w-1.5 h-12 bg-purple"></div>
+                <div className="w-1.5 h-12 bg-purple"></div>
+              </div>
+              <div
+                data-aos="fade-down"
+                data-aos-delay="100"
+                className="bg-orage-400 flex w-1/2 items-center pl-[86px]"
+              >
+                <h3 className="text-purple text-2xl font-bold text-end">
+                  {/* {date} */}
+                </h3>
+              </div>
+            </div>
+          </div>
+
           <DesktopTimes
             topic={"Hackathon Announcement"}
             content={
