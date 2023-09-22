@@ -119,7 +119,7 @@ export default function Contact() {
                   className="lg:grid grid-cols-2 gap-x-5"
                 >
                   <div className="mb-3">
-                    <label htmlFor="teamName">Team's Name</label>
+                    <label htmlFor="teamName">Team&apos;s Name</label>
                     <input
                       type="text"
                       placeholder="Enter the name of your group"
