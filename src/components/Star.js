@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Star({ s, h, w }) {
   return (
-    <div className="w-full h-full glitter">
+    <div data-aos="zoom-in" data-aos-delay='400' className="w-full h-full glitter">
       <Image
         src={s}
         alt="getLinked"

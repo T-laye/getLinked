@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Glow() {
   return (
     <>
-      <div className=" lg:block  ">
+      <div data-aos="zoom-in" className=" lg:block  ">
         <Image
           src={glow}
           width={500}
