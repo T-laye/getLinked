@@ -13,13 +13,14 @@ export default function NavBar() {
 
   return (
     <>
+      {/* Desktop Nav bar */}
       <nav className="lg:flex items-center hidden w-7/12 ">
-        <ul className="flex text-base b-slate-900  justify-between w-full items-center  bg-bue-500">
-          <li>
-            <Link href="/#timeline">Timeline</Link>
-          </li>
+        <ul className="flex text-base b-slate-900   justify-between w-full items-center">
           <li>
             <Link href="/#intro">Overview</Link>
+          </li>
+          <li>
+            <Link href="/#timeline">Timeline</Link>
           </li>
           <li>
             <a href="/#faq">FAQs</a>
@@ -30,7 +31,9 @@ export default function NavBar() {
           <Button />
         </ul>
       </nav>
-      <nav className="lg:hidden">
+
+      {/* Mobile Navbar */}
+      <nav className="lg:hidden ">
         <div className=" lg:hidden ">
           <div onClick={handleNav} className=" w-[19px] cursor-pointer">
             <Image
@@ -67,22 +70,22 @@ export default function NavBar() {
                   className=" object-center w-full  object-contain "
                 />
               </div>
-              <ul className="flex flex-col text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start  bg-bue-500 ">
-                <li>
-                  <Link href="/#timeline">Timeline</Link>
-                </li>
+              <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start  bg-blue-500 ">
                 <li>
                   <Link href="/#intro">Overview</Link>
                 </li>
                 <li>
+                  <Link href="/#timeline">Timeline</Link>
+                </li>
+                <li>
                   <Link href="/#faq">FAQs</Link>
                 </li>
-                <li className="mb-7">
+                <li className="">
                   <Link href="/contact">Contact</Link>
                 </li>
-                <li className="mt-">
+                <div className="bg-red-800 block mt-7">
                   <Button />
-                </li>
+                </div>
               </ul>
             </div>
           </div>

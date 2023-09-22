@@ -21,7 +21,7 @@ export default function Layout({ title, children }) {
           <Logo height={120} width={120} />
           <NavBar />
         </div>
-        <div className=" mix-blend-hard-light bg-blend-hard-light hidden lg:block  absolute -bottom-80 left-40  -z-10">
+        <div className=" mix-blend-hard-light bg-blend-hard-light hidden lg:block  absolute -top-24 left-40  -z-10">
           <Glow />
         </div>
       </header>

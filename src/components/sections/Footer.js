@@ -41,13 +41,13 @@ export default function Footer() {
           <h4 className="text-purple text-sm">Useful Links</h4>
           <div className="text-xs mt-2 flex flex-col space-y-2">
             <div>
-              <a href="#intro">Overview</a>
+              <Link href="/#intro">Overview</Link>
             </div>
             <div>
-              <Link href="#timeline">Timeline</Link>{" "}
+              <Link href="/#timeline">Timeline</Link>{" "}
             </div>
             <div>
-              <Link href="#faq">FAQs</Link>
+              <Link href="/#faq">FAQs</Link>
             </div>
             <div>
               <Link href="/register">Register</Link>{" "}

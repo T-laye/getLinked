@@ -11,7 +11,7 @@ export default function Rules() {
     <section
       data-aos="zoom-in"
       data-aos-delay=""
-      className="min-h-scren pb-20 h-creen lg:min-h-[60vh] lg:h-[60vh]   flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] "
+      className="min-h-scren pb-20 h-creen lg:min-h-[60vh]   flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] "
     >
       <div
         data-aos="fade-down"

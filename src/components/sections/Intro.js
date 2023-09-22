@@ -9,7 +9,7 @@ import Glow from "../Glow";
 
 export default function Intro() {
   return (
-    <section id="intro" className="min-h-scren h-sceen lg:min-h-[60vh] lg:h-[60vh] py-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+    <section id="intro" className="min-h-scren h-sceen lg:min-h-[70vh] py-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center  relative overflow-hidden  border-b border-b-[#ffffff18] ">
       <div className="bg-ble-500 h-1/2 py-8 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
         <div
           data-aos="fade-right"
@@ -28,7 +28,7 @@ export default function Intro() {
         <div
           data-aos="fade-right"
           data-aos-delay="700"
-          className="  h-full b-green-300 hidden lg:block"
+          className="  h-full w-2/3 b-green-300 hidden lg:block"
         >
           <Image
             src={bigIdeaDesktop}
