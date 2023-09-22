@@ -7,7 +7,7 @@ import Star from "../Star";
 
 export default function Timeline() {
   return (
-    <section className="min-h-screen h-sceen py-16 hidden lg:block">
+    <section id="timeline" className="min-h-screen h-sceen py-16 hidden lg:block">
       <div className="min-h-sreen container mx-auto b-red-300 h-full relative">
         <div className="flex flex-col items-center">
           <h2

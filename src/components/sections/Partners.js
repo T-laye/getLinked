@@ -35,12 +35,12 @@ export default function Partners() {
           <div
             data-aos="zoom-in"
             data-aos-delay="100"
-            className="  h-full  lg:h-[48x] flex w-full justify-center bg-geen-300 "
+            className="  h-full  lg:h-[48x] flex w-full justify-center bg-geen-300 lg:px-6"
           >
             <Image
               src={sponsors}
-              width={700}
-              height={700}
+              width={900}
+              height={900}
               alt="trophy"
               // onClick={handleImageClick}
               className=" object-center h-full  w-full  object-contain "
@@ -51,10 +51,10 @@ export default function Partners() {
         <div className="absolute right-44 bottom-2 w-2 lg:bottom-20 lg:right-[45%] lg:w-4">
           <Star s={whiteStar} h={32} w={26} />
         </div>
-        <div className="absolute right-40 top-[65%] w-2 lg:-top-16 lg:right-[42%] lg:w-4">
+        <div className="absolute right-[45%] top-[65%] w-2 lg:top-72 lg:right-[43%] lg:w-4">
           <Star s={purpleStar} h={32} w={26} />
         </div>
-        <div className="absolute left-24 top-[55%] w-2.5 lg:-top-[50%] lg:left-48 lg:w-6">
+        <div className="absolute left-20 top-[55%] w-2 lg:top-36 lg:left-40 lg:w-4">
           <Star s={blueStar} h={32} w={26} />
         </div>
       </div>

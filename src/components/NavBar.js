@@ -3,13 +3,12 @@ import Button from "./Button";
 import hamMenu from "public/icons/menu.svg";
 import close from "public/icons/cancel_btn.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NavBar() {
   const [openNav, setOpenNav] = useState(false);
-
   const handleNav = () => {
     setOpenNav(!openNav);
-    console.log("iii");
   };
 
   return (
@@ -17,16 +16,16 @@ export default function NavBar() {
       <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900  justify-between w-full items-center  bg-bue-500">
           <li>
-            <a href="">Timeline</a>
+            <Link href="/#timeline">Timeline</Link>
           </li>
           <li>
-            <a href="">Overview</a>
+            <Link href="/#intro">Overview</Link>
           </li>
           <li>
-            <a href="">FAQs</a>
+            <a href="/#faq">FAQs</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
           <Button />
         </ul>
@@ -69,17 +68,17 @@ export default function NavBar() {
                 />
               </div>
               <ul className="flex flex-col text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start  bg-bue-500 ">
-                <li className="mb-5">
-                  <a href="">Timeline</a>
+                <li>
+                  <Link href="/#timeline">Timeline</Link>
                 </li>
-                <li className="mb-5">
-                  <a href="">Overview</a>
+                <li>
+                  <Link href="/#intro">Overview</Link>
                 </li>
-                <li className="mb-5">
-                  <a href="">FAQs</a>
+                <li>
+                  <Link href="/#faq">FAQs</Link>
                 </li>
                 <li className="mb-7">
-                  <a href="">Contact</a>
+                  <Link href="/contact">Contact</Link>
                 </li>
                 <li className="mt-">
                   <Button />

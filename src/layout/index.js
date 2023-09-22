@@ -16,8 +16,8 @@ export default function Layout({ title, children }) {
           rel="stylesheet"
         />
       </Head>
-      <header className="flex lg:items-end bg-red-40 border-b-[1px] border-b-[#ffffff18] h-[8vh] lg:h-[12vh] lg:py-3 relative">
-        <div className="container px-8 lg:px-10 mx-auto flex justify-between items-center">
+      <header className="flex lg:items-end bg-red-40 border-b-[1px] border-b-[#ffffff18] h-[8vh] lg:h-[12vh] lg:py-3 ">
+        <div className="container px-8 lg:px-10  bggreen-400  mx-auto flex justify-between items-center relative">
           <Logo height={120} width={120} />
           <NavBar />
         </div>

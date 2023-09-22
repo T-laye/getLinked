@@ -10,7 +10,7 @@ import Accordian from "../Accordian";
 
 export default function FAQ() {
   return (
-    <section className="min-h-screen    pb-16 lg:py-10 2xl:py-20 flex flex-col-reverse lg:flex-row-reverse lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] overflow-x-hidden">
+    <section id="faq" className="min-h-screen    pb-16 lg:py-10 2xl:py-20 flex flex-col-reverse lg:flex-row-reverse lg:items-center  lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] overflow-x-hidden">
       <div
         data-aos="zoom-out"
         data-aos-delay="100"

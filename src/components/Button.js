@@ -1,5 +1,16 @@
+import { useRouter } from "next/router";
 import React from "react";
 
-export default function Button({ text = "Register" }) {
-  return <button className="btn primary-bg">{text}</button>;
+export default function Button() {
+  const router = useRouter();
+
+  const goToRegister = () => {
+    router.push("/register");
+  };
+
+  return (
+    <button onClick={goToRegister} className="btn primary-bg">
+      Register
+    </button>
+  );
 }

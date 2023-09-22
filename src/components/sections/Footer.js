@@ -41,16 +41,16 @@ export default function Footer() {
           <h4 className="text-purple text-sm">Useful Links</h4>
           <div className="text-xs mt-2 flex flex-col space-y-2">
             <div>
-              <Link href="#">Overview</Link>
+              <a href="#intro">Overview</a>
             </div>
             <div>
-              <Link href="#">Timeline</Link>{" "}
+              <Link href="#timeline">Timeline</Link>{" "}
             </div>
             <div>
-              <Link href="#">FAQs</Link>
+              <Link href="#faq">FAQs</Link>
             </div>
             <div>
-              <Link href="#">Register</Link>{" "}
+              <Link href="/register">Register</Link>{" "}
             </div>
           </div>
           <div className="flex items-end space-x-3">
@@ -179,7 +179,7 @@ export default function Footer() {
       </div>
 
       {/* stars */}
-      <div className="absolute left-40 bottom-[10%] w-2 lg:-bottom-[20%] lg:left-[50%] lg:w-4">
+      <div className="absolute left-40 bottom-[10%] w-2 lg:bottom-[20%] lg:left-[50%] lg:w-4">
         <Star s={purpleStar} h={32} w={26} />
       </div>
       <div className="absolute right-[90%] top-[8%] w-2.5 lg:top-[80%] lg:right-[10%] lg:w-2">

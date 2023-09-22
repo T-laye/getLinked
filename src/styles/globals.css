@@ -27,6 +27,9 @@ body {
   overflow-x: hidden;
   @apply bg-darkBlue text-white;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 input {
   border-radius: 4px;
@@ -61,9 +64,6 @@ label {
   font-size: 13px;
   margin-bottom: 10px;
   margin-left: 5px;
-}
-.glow {
-  box-shadow: rgba(72, 135, 202, 0.8) 0 0 100px 100px;
 }
 
 @media (min-width: 1024px) {
@@ -100,7 +100,7 @@ label {
 }
 
 .glitter {
-  animation: glitter 0.5s infinite;
+  animation: glitter 1s infinite;
 }
 
 .bg-image {

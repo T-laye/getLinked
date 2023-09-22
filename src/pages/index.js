@@ -35,7 +35,7 @@ export default function Home() {
       {/* Rules and Guidelines */}
       <div className="relative">
         <Rules />
-        <div className=" mix-blend-hard-light bg-blend-hard-light  absolute  -top-[5%] left-0 -z-10 lg:-top-[50%] lg:left-[2%]">
+        <div className=" mix-blend-hard-light bg-blend-hard-light  absolute  -top-[20%] left-0 -z-10 lg:-top-[50%] lg:left-[2%]">
           <Glow />
         </div>
         <div className=" mix-blend-hard-light bg-blend-hard-light  absolute  -right-52 bottom-10 -z-10 lg:-bottom-[55%] lg:-right-[28%]">
