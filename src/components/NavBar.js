@@ -70,7 +70,7 @@ export default function NavBar() {
                   className=" object-center w-full  object-contain "
                 />
               </div>
-              <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start  bg-blue-500 ">
+              <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
                 <li>
                   <Link href="/#intro">Overview</Link>
                 </li>
@@ -83,7 +83,7 @@ export default function NavBar() {
                 <li className="">
                   <Link href="/contact">Contact</Link>
                 </li>
-                <div className="bg-red-800 block mt-7">
+                <div className=" pt-4 w-full">
                   <Button />
                 </div>
               </ul>
