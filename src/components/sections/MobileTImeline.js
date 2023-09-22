@@ -7,7 +7,7 @@ import Star from "../Star";
 
 export default function MobileTimeline() {
   return (
-    <section className="min-h-scren h-sceen py-16 lg:hidden">
+    <section id="mobileTimeline" className="min-h-scren h-sceen py-16 lg:hidden">
       <div className="min-h-sreen container mx-auto px-8 b-red-300 h-full relative">
         <div className="flex flex-col items-center">
           <h2

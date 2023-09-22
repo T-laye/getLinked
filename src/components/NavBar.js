@@ -46,8 +46,11 @@ export default function NavBar() {
             />
           </div>
           <div
+            onClick={handleNav}
             className={`${
-              openNav ? "h-screen duration-500 fixed " : "duration-500 h-0 absolute"
+              openNav
+                ? "h-screen duration-500 fixed "
+                : "duration-500 h-0 absolute"
             } bg-[#150E2895]   z-[100] left-0 top-0 bottom-0 right-0`}
           >
             <div
@@ -75,7 +78,7 @@ export default function NavBar() {
                   <Link href="/#intro">Overview</Link>
                 </li>
                 <li>
-                  <Link href="/#timeline">Timeline</Link>
+                  <Link href="/#mobileTimeline">Timeline</Link>
                 </li>
                 <li>
                   <Link href="/#faq">FAQs</Link>
