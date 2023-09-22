@@ -23,7 +23,7 @@ export default function NavBar() {
             <Link href="/#timeline">Timeline</Link>
           </li>
           <li>
-            <a href="/#faq">FAQs</a>
+            <Link href="/#faq">FAQs</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
@@ -47,8 +47,8 @@ export default function NavBar() {
           </div>
           <div
             className={`${
-              openNav ? "h-screen duration-500 " : "duration-500 h-0 "
-            } bg-[#150E2895]  absolute z-[100] left-0 top-0 bottom-0 right-0`}
+              openNav ? "h-screen duration-500 fixed " : "duration-500 h-0 absolute"
+            } bg-[#150E2895]   z-[100] left-0 top-0 bottom-0 right-0`}
           >
             <div
               className={`${

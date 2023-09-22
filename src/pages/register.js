@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
               <div className="flex items-end lg:justify-start justify-center space-x-3">
                 <p className=" text-xs whitespace-nowrap">
-                  Be part of this movement
+                  Be part of this movement!
                 </p>
                 <div
                   data-aos="fade-left"
