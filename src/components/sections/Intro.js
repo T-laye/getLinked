@@ -9,12 +9,12 @@ import Glow from "../Glow";
 
 export default function Intro() {
   return (
-    <section id="intro" className="min-h-scren h-sceen lg:min-h-[70vh] py-20 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center  relative overflow-hidden  border-b border-b-[#ffffff18] ">
-      <div className="bg-ble-500 h-1/2 py-8 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
+    <section id="intro" className="min-h-scren h-sceen lg:min-h-[70vh] pb-20 pt-10 lg:py-10 2xl:py-20 flex flex-col lg:flex-row lg:items-center  relative overflow-hidden  border-b border-b-[#ffffff18] ">
+      <div className="bg-ble-500 h-1/2 pb-8 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative">
         <div
           data-aos="fade-right"
           data-aos-delay="1000"
-          className="  h-full lg:hidden "
+          className=" w-full px-14 bg-gren-200 h-full lg:hidden "
         >
           <Image
             src={bigIdea}
@@ -22,7 +22,7 @@ export default function Intro() {
             height={700}
             alt="Hack Guy"
             // onClick={handleImageClick}
-            className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
+            className=" object-center h-full place-self-end w-full inline-block bg-re-300 object-contain "
           />
         </div>
         <div
