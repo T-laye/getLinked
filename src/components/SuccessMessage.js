@@ -13,7 +13,7 @@ import wink from "public/images/wink_emoji.svg";
 export default function SuccessMessage() {
   const router = useRouter();
   const goBack = () => {
-    router.back();
+    router.push('/');
   };
 
   return (
