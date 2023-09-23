@@ -72,9 +72,9 @@ export default function Hero() {
             />
           </div>
           <div
-            // data-aos="zoom-out"
+            data-aos="zoom-in"
             data-aos-delay="500"
-            className="globe animate-pulse mix-blend-hard-light h-[75%] bg-blue300 absolute  z-40 opacity-80 right-20 top-11 md:right-20 lg:hidden flex justify-end "
+            className=" mix-blend-hard-light slow-spin h-[150%] w-[150%] bg-blue300 absolute  z-40  -right-[29%] -top-[34%] md:right-20 lg:hidden flex justify-end bg-geen-300"
           >
             <Image
               src={globe}
@@ -82,7 +82,7 @@ export default function Hero() {
               height={700}
               alt="Hack Guy"
               // onClick={handleImageClick}
-              className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
+              className=" object-center animate-pulse h-full place-self-end w-full bg-re-300 object-contain "
             />
           </div>
         </div>
