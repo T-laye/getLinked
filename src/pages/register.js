@@ -18,6 +18,7 @@ import Glow from "@/components/Glow";
 import Star from "@/components/Star";
 import Spinner from "@/components/Spinner";
 import SuccessMessage from "@/components/SuccessMessage";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   const router = useRouter();
@@ -68,6 +69,7 @@ export default function Contact() {
       }
     } catch (error) {
       setPending(false);
+      toast.error("Unable to register")
       // console.log(error);
     }
   }

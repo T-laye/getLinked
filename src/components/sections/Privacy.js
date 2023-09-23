@@ -14,7 +14,7 @@ export default function Privacy() {
       <div className="container mx-auto lg:flex relative">
         <div className="lg:w-1/2 lg:max-w-lg lg:mt-20 mx-auto">
           <div
-            // data-aos="fade-up"
+            data-aos="fade-up"
             data-aos-delay="1000"
             className="bg-red300 py-4  relative  "
           >
@@ -34,7 +34,7 @@ export default function Privacy() {
               </p>
             </div>
           </div>
-          <div className="px-12 lg:px-0">
+          <div data-aos="flip-right" className="px-12 lg:px-0">
             <div className="border border-purple w-full  rounded-md px-4 lg:px-16 shrink-0 bg-[#d9d9d903]">
               <p className="mt-10 text-center lg:text-start  bg-red300 text-sm  lg:px-0 leading-[27.5px] ">
                 At getlinked tech Hackathon 1.0, we value your privacy and are
@@ -52,7 +52,7 @@ export default function Privacy() {
               </p>
 
               <div className="mt-6 flex space-x-3">
-                <div className=" w-4 min-h-fit h-4">
+                <div data-aos="zoom-in" className=" w-4 min-h-fit h-4">
                   <Image
                     src={tick}
                     width={700}
@@ -68,7 +68,7 @@ export default function Privacy() {
                 </p>
               </div>
               <div className="mt-6 flex space-x-3">
-                <div className=" w-4 min-h-fit h-4">
+                <div data-aos="zoom-in" className=" w-4 min-h-fit h-4">
                   <Image
                     src={tick}
                     width={700}
@@ -83,7 +83,10 @@ export default function Privacy() {
                   sites, for your project developement
                 </p>
               </div>
-              <div className="flex justify-center mt-10 my-12">
+              <div
+                data-aos="flip-up"
+                className="flex justify-center mt-10 my-12"
+              >
                 <button className="btn--small lg:hidden primary-bg text-xs">
                   Read More
                 </button>

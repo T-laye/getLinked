@@ -16,20 +16,11 @@ export default function SuccessMessage() {
     router.back();
   };
 
-//   const [showSuccess, setSetShowSuccess] = useState(show)
-
-//   const handleShowSuccess = ()=>{
-//     setSetShowSuccess(!showSuccess)
-//   }
-
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 h-screen bg-[#150E28ED] flex justify-center items-center">
       <div className="border border-[#D434FE] rounded-md bg-[#FFFFFF03] py-8 w-4/5 max-w-[699px] relative">
         <div className="flex justify-center px-8">
-          <div
-            //   data-aos="zoom-in"
-            className="w-11/12 lg:w-3/5 "
-          >
+          <div data-aos="zoom-in" className="w-11/12 lg:w-3/5 ">
             <Image
               src={success}
               width={700}
@@ -42,20 +33,17 @@ export default function SuccessMessage() {
         </div>
         <div className="flex justify-center flex-col items-center mt-5">
           <h4
-            // data-aos="flip-left"
+            data-aos="flip-left"
             className="text-base lg:text[32px] lg:w-1/3 text-center font-semibold w-2/3"
           >
             Congratulations you have successfully Registered!
           </h4>
           <p
-            // data-aos="flip-right"
+            data-aos="flip-right"
             className="text-xs text-center lg:w-1/2 lg:text-sm font-medium w-3/4 mt-6 leading-5"
           >
             Yes, it was easy and you did it! check your mail box for next step{" "}
-            <span
-              //  data-aos="fade-left"
-              className="inline-block w-4"
-            >
+            <span data-aos="fade-left" className="inline-block w-4">
               <Image
                 src={wink}
                 width={700}
@@ -68,7 +56,7 @@ export default function SuccessMessage() {
           </p>
         </div>
         <div
-          //   data-aos="flip-down"
+          data-aos="flip-down"
           data-aos-delay="100"
           className="flex justify-center mt-4 w-full bg-gren-300 lg:mb-5  place-self-center  "
         >

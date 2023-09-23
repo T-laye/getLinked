@@ -20,6 +20,8 @@ import blueStar from "public/blue_star.svg";
 import Glow from "@/components/Glow";
 import Star from "@/components/Star";
 import Spinner from "@/components/Spinner";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const router = useRouter();
@@ -58,9 +60,13 @@ export default function Contact() {
       if (res) {
         setPending(false);
         console.log(res.data.first_name);
+        // toast.success(`Your message has been sent`);
+        toast.success(`${res.data.first_name}, Your message has been sent`);
       }
     } catch (error) {
-      console.log(error);
+      setPending(false);
+      // console.log(error);
+      toast.error("Error sending message");
     }
   }
 

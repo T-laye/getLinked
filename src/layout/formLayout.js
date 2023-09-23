@@ -1,8 +1,15 @@
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
 import Logo from "src/components/Logo";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function FormLayout({ title, children }) {
+  const customToastStyle = {
+    backgroundColor: "#150E28",
+    color: "#fff",
+  };
+
   return (
     <>
       <Head>
@@ -15,6 +22,7 @@ export default function FormLayout({ title, children }) {
           rel="stylesheet"
         />
       </Head>
+      <ToastContainer closeOnClick pauseOnHover toastStyle={customToastStyle} />
       <main className="overflow-hidden">{children}</main>
     </>
   );
