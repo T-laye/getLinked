@@ -97,7 +97,7 @@ export default function Contact() {
   //   console.log(categories);
 
   const renderCategories = () => {
-    return categories?.map((c) => (
+    return categories.map((c) => (
       <option key={c?.id} value={c?.id}>
         {c?.name}
       </option>
