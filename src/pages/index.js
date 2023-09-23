@@ -18,7 +18,7 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <div className=" relative ">
-        <div className=" mix-blend-hard-light bg-blend-hard-light lg:hidden left-0 absolute top-0  lg:-top-[30%] lg:left-[15%]">
+        <div className=" mix-blend-hard-light bg-blend-hard-light -left-0  lg:opacity-50 absolute top-0  lg:-top-[34%] lg:left-[13%]">
           <Glow />
         </div>
         <Hero />
