@@ -2,8 +2,6 @@ import Glow from "@/components/Glow";
 import Star from "@/components/Star";
 import Hero from "@/components/sections/Hero";
 import Layout from "src/layout/index";
-import whiteStar from "public/white_star.svg";
-import grayStar from "public/gray_star.svg";
 import Intro from "@/components/sections/Intro";
 import Rules from "@/components/sections/Rules";
 import Judge from "@/components/sections/Judge";
