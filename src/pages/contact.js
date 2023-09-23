@@ -59,7 +59,7 @@ export default function Contact() {
 
       if (res) {
         setPending(false);
-        console.log(res.data.first_name);
+        // console.log(res.data.first_name);
         // toast.success(`Your message has been sent`);
         toast.success(`${res.data.first_name}, Your message has been sent`);
       }
