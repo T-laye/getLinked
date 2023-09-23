@@ -251,7 +251,7 @@ export default function Contact() {
                     <div className="mb-3 ">
                       <label htmlFor="topic">Project</label>
                       <input
-                        type="tel"
+                        type="text"
                         placeholder="Enter your group project topic"
                         id="topic"
                         name="topic"
