@@ -6,39 +6,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function NavBar({regPage}) {
+export default function NavBar({ regPage }) {
   const [openNav, setOpenNav] = useState(false);
-  const {asPath} = useRouter()
+  const { asPath } = useRouter();
   const handleNav = () => {
     setOpenNav(!openNav);
   };
 
   // console.log(asPath);
-  
 
   return (
     <>
       {/* Desktop Nav bar */}
       <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900   justify-between w-full items-center">
-          <li
-            className={`${
-              asPath === "/#intro" ? "primary font-semibold" : ""
-            }`}
-          >
+          <li>
             <Link href="/#intro">Overview</Link>
           </li>
-          <li
-            className={`${
-              asPath === "/#timeline" ? "primary font-semibold" : ""
-            }`}
-          >
+          <li>
             <Link href="/#timeline">Timeline</Link>
           </li>
 
-          <li
-            className={`${asPath === "/#faq" ? "primary font-semibold" : ""}`}
-          >
+          <li>
             <Link href="/#faq">FAQs</Link>
           </li>
           <li
@@ -94,27 +83,13 @@ export default function NavBar({regPage}) {
                 />
               </div>
               <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
-                <li
-                  className={`${
-                    asPath === "/#intro" ? "primary font-semibold" : ""
-                  }`}
-                >
+                <li>
                   <Link href="/#intro">Overview</Link>
                 </li>
-                <li
-                  className={`${
-                    asPath === "/#mobileTimeline"
-                      ? "primary font-semibold"
-                      : ""
-                  }`}
-                >
+                <li>
                   <Link href="/#mobileTimeline">Timeline</Link>
                 </li>
-                <li
-                  className={`${
-                    asPath === "/#faq" ? "primary font-semibold" : ""
-                  }`}
-                >
+                <li>
                   <Link href="/#faq">FAQs</Link>
                 </li>
                 <li
