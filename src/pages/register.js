@@ -308,9 +308,9 @@ export default function Contact() {
                           <option value="Select ">Select</option>
                           {renderSize()}
                         </select>
-                        {formik.touched.category && formik.errors.category && (
+                        {formik.touched.size && formik.errors.size && (
                           <div className="text-red-500 text-xs">
-                            {formik.errors.category}
+                            {formik.errors.size}
                           </div>
                         )}
                       </div>
