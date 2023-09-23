@@ -16,7 +16,7 @@ export default function FormLayout({ title, children }) {
         <title>{title ? `${title} | getLinked` : "getLinked"}</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/logo.svg" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600,300&display=swap"
           rel="stylesheet"
