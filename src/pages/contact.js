@@ -29,7 +29,7 @@ export default function Contact() {
   const [pending, setPending] = useState(false);
 
   const goBack = () => {
-    router.back();
+    router.push("/");
   };
 
   const formik = useFormik({
