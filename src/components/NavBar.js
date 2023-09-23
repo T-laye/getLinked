@@ -20,20 +20,20 @@ export default function NavBar({ regPage }) {
       {/* Desktop Nav bar */}
       <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900   justify-between w-full items-center">
-          <li>
+          <li className="link hover:font-bold duration-300">
             <Link href="/#intro">Overview</Link>
           </li>
-          <li>
+          <li className="link hover:font-bold duration-300">
             <Link href="/#timeline">Timeline</Link>
           </li>
 
-          <li>
+          <li className="link hover:font-bold duration-300">
             <Link href="/#faq">FAQs</Link>
           </li>
           <li
             className={`${
               asPath === "/contact" ? "primary font-semibold" : ""
-            }`}
+            } link hover:font-bold duration-300`}
           >
             <Link href="/contact">Contact</Link>
           </li>
@@ -83,19 +83,19 @@ export default function NavBar({ regPage }) {
                 />
               </div>
               <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
-                <li>
+                <li className="link hover:font-bold duration-300">
                   <Link href="/#intro">Overview</Link>
                 </li>
-                <li>
+                <li className="link hover:font-bold duration-300">
                   <Link href="/#mobileTimeline">Timeline</Link>
                 </li>
-                <li>
+                <li className="link hover:font-bold duration-300">
                   <Link href="/#faq">FAQs</Link>
                 </li>
                 <li
                   className={`${
                     asPath === "/contact" ? "primary font-semibold" : ""
-                  }`}
+                  } link hover:font-bold duration-300`}
                 >
                   <Link href="/contact">Contact</Link>
                 </li>

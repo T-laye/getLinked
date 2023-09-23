@@ -21,6 +21,14 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.link:hover{
+  background-image: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
 .primary-bg {
   background-image: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
 }
