@@ -6,32 +6,97 @@ import Image from "next/image";
 import FormLayout from "@/layout/formLayout";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
-import { contact_validate } from "../../lib/validate";
+import { contact_validate, register_validate } from "../../lib/validate";
 import register from "public/images/regiser_ill.svg";
 import movement from "public/images/movement.svg";
+import axios from "axios";
 
 export default function Contact() {
   const router = useRouter();
   const [isFormValid, setIsFormValid] = useState(false);
   const [pending, setPending] = useState(false);
-
+  const [categories, setCategories] = useState([]);
+  const maxGroupSize = 10;
   const goBack = () => {
     router.back();
   };
 
   const formik = useFormik({
     initialValues: {
-      name: "",
+      teamName: "",
+      phone: "",
+      topic: "",
       email: "",
-      message: "",
+      category: "",
+      size: "",
+      agreement: "",
     },
-    validate: contact_validate,
+    validate: register_validate,
     onSubmit: handleSubmit,
   });
 
-  function handleSubmit(values) {
+  async function handleSubmit(values) {
     console.log(values);
+    const size = +values.size
+    const { teamName, phone, topic, email, category, agreement } = values;
+    const response = await axios.post(
+      " https://backend.getlinked.ai/hackathon/registration",
+      {
+        team_name: teamName,
+        phone_number: phone,
+        project_topic: topic,
+        email,
+        category,
+        group_size: size,
+        privacy_poclicy_accepted: agreement,
+      }
+    );
+    // console.log(response);
   }
+
+  //   "email":"sample@eexample.com",
+  //     "phone_number":"0903322445533",
+  //     "team_name": "Space Explore",
+  //     "group_size": 10,
+  //     "project_topic":"Web server propagation",
+  //     "category": 1,
+  //     "privacy_poclicy_accepted": true
+
+  useEffect(() => {
+    async function getCategory() {
+      const response = await fetch(
+        " https://backend.getlinked.ai/hackathon/categories-list"
+      );
+      const res = await response.json();
+      //   console.log(res);
+      setCategories(res);
+    }
+    getCategory();
+  });
+
+  //   console.log(categories);
+
+  const renderCategories = () => {
+    return categories?.map((c) => (
+      <option key={c?.id} value={c?.id}>
+        {c?.name}
+      </option>
+    ));
+  };
+
+ const renderSize = () => {
+   const options = [];
+   for (let i = 0; i <= maxGroupSize; i++) {
+     options.push(
+       <option key={i} value={i}>
+         {i}
+       </option>
+     );
+   }
+   return options;
+ };
+
+ 
 
   useEffect(() => {
     setIsFormValid(formik.isValid);
@@ -49,7 +114,7 @@ export default function Contact() {
       <header className="hidden lg:flex lg:items-end bg-red-40  h-[8vh] lg:h-[12vh] lg:py-3 ">
         <div className="container px-8 lg:px-10  bggreen-400  mx-auto flex justify-between items-center">
           <Logo height={120} width={120} />
-          <NavBar />
+          <NavBar regPage={true} />
         </div>
       </header>
       <section className="container pb-20 px-5 mx-auto lg:px-12 pt-10  overflow-hidden">
@@ -201,13 +266,10 @@ export default function Contact() {
                         >
                           Select your category
                         </option>
-                        <option value="Development">Development</option>
-                        <option value="Design">Design</option>
-                        <option value="Cyber Security">Cyber Security</option>
-                        <option value="others">Others</option>
+                        {renderCategories()}
                       </select>
                       {formik.touched.category && formik.errors.category && (
-                        <div className="text-error text-sm">
+                        <div className="text-red-500 text-xs">
                           {formik.errors.category}
                         </div>
                       )}
@@ -226,13 +288,10 @@ export default function Contact() {
                         {...formik.getFieldProps("size")}
                       >
                         <option value="Select ">Select</option>
-                        <option value="1 - 5">1 - 5</option>
-                        <option value="6 - 10">6 - 10</option>
-                        <option value="10 - 20">10 - 20</option>
-                        <option value="20 - 50">20 - 50</option>
+                        { renderSize()}
                       </select>
                       {formik.touched.category && formik.errors.category && (
-                        <div className="text-error text-sm">
+                        <div className="text-red-500 text-xs">
                           {formik.errors.category}
                         </div>
                       )}
@@ -263,13 +322,13 @@ export default function Contact() {
                         I agreed with the event terms and conditions and privacy
                         policy
                       </label>
+                      {formik.touched.agreement && formik.errors.agreement && (
+                        <div className="text-red-500 text-xs">
+                          {formik.errors.agreement}
+                        </div>
+                      )}
                     </div>
                   </div>
-                  {formik.touched.agreement && formik.errors.agreement && (
-                    <div className="text-error text-sm">
-                      {formik.errors.agreement}
-                    </div>
-                  )}
                   <div
                     // data-aos="flip-down"
                     data-aos-delay="100"
@@ -277,7 +336,7 @@ export default function Contact() {
                   >
                     <button
                       type="submit"
-                      className="btn w-full primary-bg text-base"
+                      className="btn lg:w-full primary-bg text-base"
                     >
                       Register Now
                     </button>

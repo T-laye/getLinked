@@ -24,6 +24,14 @@
 .primary-bg {
   background-image: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
 }
+.primary-border {
+  border: 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #903aff, #fe34b9);
+}
+
 
 .unica {
   font-family: "Unica One", cursive;
@@ -60,7 +68,7 @@ select {
 }
 
 option {
-  @apply bg-darkBlue text-xs;
+  @apply bg-darkBlue text-sm;
 }
 
 textarea {

@@ -12,6 +12,7 @@ import linkedIn from "public/icons/linkedIn.svg";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
 import { contact_validate } from "../../lib/validate";
+import axios from "axios";
 
 export default function Contact() {
   const router = useRouter();
@@ -26,14 +27,25 @@ export default function Contact() {
     initialValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
     validate: contact_validate,
     onSubmit: handleSubmit,
   });
 
-  function handleSubmit(values) {
+  async function handleSubmit(values) {
     console.log(values);
+    const {email, phone, name, message} = values
+        const res = await axios.post(
+          " https://backend.getlinked.ai/hackathon/contact-form",
+          {
+            email,
+            phone_number: phone,
+            first_name: name,
+            message,
+          }
+        );
   }
 
   useEffect(() => {
@@ -185,7 +197,7 @@ export default function Contact() {
                   <div className="mb-8">
                     <input
                       type="text"
-                      placeholder="Name"
+                      placeholder="Enter your first name"
                       id="name"
                       name="name"
                       className={getInputClassNames("name")}
@@ -200,7 +212,7 @@ export default function Contact() {
                   <div className="mb-8">
                     <input
                       type="email"
-                      placeholder="Email"
+                      placeholder="Enter your email"
                       id="email"
                       name="email"
                       className={getInputClassNames("email")}
@@ -213,11 +225,26 @@ export default function Contact() {
                     )}
                   </div>
                   <div className="mb-8">
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      id="phone"
+                      name="phone"
+                      className={`${getInputClassNames("phone")}`}
+                      {...formik.getFieldProps("phone")}
+                    />
+                    {formik.touched.phone && formik.errors.phone && (
+                      <div className="text-red-600 text-xs">
+                        {formik.errors.phone}
+                      </div>
+                    )}
+                  </div>
+                  <div className="mb-8">
                     <textarea
                       id="message"
                       name="message"
                       type="text"
-                      placeholder="Message"
+                      placeholder="Enter your message"
                       className={getInputClassNames("message")}
                       {...formik.getFieldProps("message")}
                     />

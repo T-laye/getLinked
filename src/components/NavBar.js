@@ -5,7 +5,7 @@ import close from "public/icons/cancel_btn.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavBar() {
+export default function NavBar({regPage}) {
   const [openNav, setOpenNav] = useState(false);
   const handleNav = () => {
     setOpenNav(!openNav);
@@ -28,7 +28,7 @@ export default function NavBar() {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
-          <Button />
+          <Button regPage={regPage} />
         </ul>
       </nav>
 

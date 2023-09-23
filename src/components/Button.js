@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-export default function Button() {
+export default function Button({regPage}) {
   const router = useRouter();
 
   const goToRegister = () => {
@@ -9,7 +9,7 @@ export default function Button() {
   };
 
   return (
-    <button onClick={goToRegister} className="btn primary-bg">
+    <button onClick={goToRegister} className={`btn ${regPage ? ' primary-border' : 'primary-bg'}`}>
       Register
     </button>
   );
