@@ -64,12 +64,12 @@ export default function Contact() {
       );
       if (response.data) {
         setPending(false);
-        setShowSuccess(true)
+        setShowSuccess(true);
         // console.log(response);
       }
     } catch (error) {
       setPending(false);
-      toast.error("Unable to register")
+      toast.error("Unable to register");
       // console.log(error);
     }
   }
@@ -293,7 +293,7 @@ export default function Contact() {
                         )}
                       </div>
                       <div className="mb-6 w-2/5 lg:w-1/2">
-                        <label className="" htmlFor="size">
+                        <label className="whitespace-nowrap" htmlFor="size">
                           Group Size
                         </label>
                         <select
