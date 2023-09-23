@@ -17,7 +17,10 @@ import glow from "public/Purple-Lens-Flare-PNG.png";
 
 export default function Hero() {
   return (
-    <section className="h-[vh] max-md:max-h-[92vh]  lg:min-h-[87vh] relative border-b border-b-[#ffffff18]  overflow-hidden">
+    <section
+      id="overview"
+      className="h-[vh] max-md:max-h-[92vh]  lg:min-h-[87vh] relative border-b border-b-[#ffffff18]  overflow-hidden"
+    >
       <div className="text-center lg:text-end mt-6 mb-7 lg:px-14">
         <div
           data-aos="fade-down"

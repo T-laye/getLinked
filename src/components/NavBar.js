@@ -21,7 +21,7 @@ export default function NavBar({ regPage }) {
       <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900   justify-between w-full items-center">
           <li className="link hover:font-bold duration-300">
-            <Link href="/#intro">Overview</Link>
+            <Link href="/#overview">Overview</Link>
           </li>
           <li className="link hover:font-bold duration-300">
             <Link href="/#timeline">Timeline</Link>
@@ -84,7 +84,7 @@ export default function NavBar({ regPage }) {
               </div>
               <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
                 <li className="link hover:font-bold duration-300">
-                  <Link href="/#intro">Overview</Link>
+                  <Link href="/#overview">Overview</Link>
                 </li>
                 <li className="link hover:font-bold duration-300">
                   <Link href="/#mobileTimeline">Timeline</Link>
