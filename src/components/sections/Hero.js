@@ -3,7 +3,8 @@ import Glow from "../Glow";
 import Curved from "../Curved_line";
 import hackGuy from "public/images/hackathon_guy.png";
 import metric from "public/images/metric.png";
-import globe from "public/images/glass_globe.svg";
+import globe from "public/images/globe rotate.png";
+// import globe from "public/images/glass_globe.svg";
 import writeup from "public/images/Title.svg";
 import Image from "next/image";
 import Button from "../Button";
@@ -104,9 +105,9 @@ export default function Hero() {
         />
       </div>
       <div
-        data-aos="zoom-out"
+        // data-aos="zoom-out"
         data-aos-delay="500"
-        className="globe hidden animate-pulse mix-blend-hard-light h-[85%] bg-blue300 absolute  z-40 opacity-80 right-10 bottom-0 lg:flex justify-end "
+        className="globe hidden  slow-spin mix-blend-hard-light h-[120%] 2xl:h-[130%] bg-blue300 absolute  z-40 opacity0 -right-[8%]  -top-40  lg:flex justify-end "
       >
         <Image
           src={globe}
@@ -114,7 +115,7 @@ export default function Hero() {
           height={700}
           alt="Hack Guy"
           // onClick={handleImageClick}
-          className=" object-center h-full place-self-end w-fit inline-block bg-re-300 object-contain "
+          className=" object-center animate-pulse h-full place-self-end w-fit inline-block bg-re-300 object-contain "
         />
       </div>
       <div className=" h-[85%] bg-blue300 absolute bottom-0 z-0  right-0 hidden lg:flex justify-end ">

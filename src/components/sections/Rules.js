@@ -14,9 +14,9 @@ export default function Rules() {
       className="min-h-scren pb-20 h-creen lg:min-h-[60vh]   flex flex-col lg:flex-row-reverse lg:items-center px- lg:-10  relative overflow-hidden  border-b border-b-[#ffffff18] "
     >
       <div
-        data-aos="fade-down"
+        // data-aos="fade-down"
         data-aos-delay="100"
-        className="bg-ble-500 h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2 justify-center relative"
+        className="bg-ble-500 h-1/2 container mx-auto flex items-center lg:h-full lg:w-1/2  justify-center relative"
       >
         <div className="  h-full flex w-full justify-center bg-geen-300 ">
           <Image
@@ -25,7 +25,7 @@ export default function Rules() {
             height={700}
             alt="Hack Guy"
             // onClick={handleImageClick}
-            className=" object-center max-lg:px-10 h-full place-self-end w-full inline-block bg-re-300 object-contain "
+            className=" object-center max-lg:px-10 2xl:px-20 h-full place-self-end w-full inline-block bg-re-300 object-contain "
           />
         </div>
         <div className="absolute left-8 top-54 w-3 lg:w-6 lg:-left-5 lg:bottom-20">

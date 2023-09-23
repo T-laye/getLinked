@@ -128,3 +128,16 @@ label {
   background-blend-mode: color-burn;
   background-size: cover;
 }
+
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slowSpin 60s linear infinite; /* Adjust the animation duration (5s) for slower or faster rotation */
+}
