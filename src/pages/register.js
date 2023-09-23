@@ -69,7 +69,7 @@ export default function Contact() {
       }
     } catch (error) {
       setPending(false);
-      toast.error("Unable to register");
+      toast.error("Error Register");
       // console.log(error);
     }
   }

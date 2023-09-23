@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bulb from "public/lightBulb.png";
 import fire from "public/fire.png";
 import chain from "public/chain.png";
@@ -7,6 +7,26 @@ import Button from "./Button";
 // import writeup from "public/images/Title.svg";
 
 export default function HeroTitle() {
+  const targetTime = new Date("2023-09-26T00:00:00Z");
+  const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
+
+  function calculateTimeRemaining() {
+    const now = new Date();
+    const difference = targetTime - now;
+    const hours = Math.floor(difference / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    return { hours, minutes, seconds };
+  }
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRemainingTime(calculateTimeRemaining());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div>
       <div
@@ -64,18 +84,27 @@ export default function HeroTitle() {
           <Button />
         </div>
         <div
-        //   data-aos="flip-up"
+          //   data-aos="flip-up"
           data-aos-delay="800"
           className="unica text-[48px] lg:text-[64px] mt-3 lg:mt-10 2xl:mt-20 flex space-x-2.5 justify-center lg:justify-start"
         >
           <span>
-            00<span className="text-sm">H</span>
+            {remainingTime.hours.toLocaleString("en-US", {
+              minimumIntegerDigits: 2,
+            })}
+            <span className="text-sm">H</span>
           </span>
           <span>
-            00<span className="text-sm">M</span>
+            {remainingTime.minutes.toLocaleString("en-US", {
+              minimumIntegerDigits: 2,
+            })}
+            <span className="text-sm">M</span>
           </span>
           <span>
-            00<span className="text-sm">S</span>
+            {remainingTime.seconds.toLocaleString("en-US", {
+              minimumIntegerDigits: 2,
+            })}
+            <span className="text-sm">S</span>
           </span>
         </div>
       </div>
