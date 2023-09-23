@@ -15,7 +15,7 @@ export default function FormLayout({ title, children }) {
           rel="stylesheet"
         />
       </Head>
-      <main className="">{children}</main>
+      <main className="overflow-hidden">{children}</main>
     </>
   );
 }

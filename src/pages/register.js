@@ -52,7 +52,7 @@ export default function Contact() {
           <NavBar />
         </div>
       </header>
-      <section className="container pb-20 px-5 mx-auto lg:px-12 pt-10  ">
+      <section className="container pb-20 px-5 mx-auto lg:px-12 pt-10  overflow-hidden">
         <div className="lg:hidden">
           <div
             data-aos="fade-left"
@@ -96,10 +96,7 @@ export default function Contact() {
                 <p className=" text-xs whitespace-nowrap">
                   Be part of this movement!
                 </p>
-                <div
-                  data-aos="fade-left"
-                  className="w-20 pb-1"
-                >
+                <div data-aos="fade-left" className="w-20 pb-1">
                   <Image
                     src={movement}
                     width={700}

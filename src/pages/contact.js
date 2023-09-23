@@ -55,7 +55,7 @@ export default function Contact() {
           <NavBar />
         </div>
       </header>
-      <section className="container pb-20 mx-auto lg:px-12 pt-10 ">
+      <section className="container pb-20 mx-auto lg:px-12 pt-10 overflow-hidden">
         <div className="lg:hidden mb-12 px-10">
           <div
             onClick={goBack}
