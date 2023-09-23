@@ -65,13 +65,13 @@ export default function NavBar({ regPage }) {
             <div
               className={`${
                 openNav
-                  ? "translate-y-0 duration-500"
-                  : "duration-500 -translate-y-full"
+                  ? "translate-y-0 duration-500 opacity-100"
+                  : "duration-500 -translate-y-full opacity-0"
               } flex flex-col  bg-darkBlue h-[55vh]   px-10 pt-10`}
             >
               <div
                 onClick={handleNav}
-                className=" w-[23px] place-self-end mx-4"
+                className=" w-[23px] place-self-end mx-4 cursor-pointer"
               >
                 <Image
                   src={close}
