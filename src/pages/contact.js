@@ -19,6 +19,7 @@ import grayStar from "public/gray_star.svg";
 import blueStar from "public/blue_star.svg";
 import Glow from "@/components/Glow";
 import Star from "@/components/Star";
+import Spinner from "@/components/Spinner";
 
 export default function Contact() {
   const router = useRouter();
@@ -41,17 +42,26 @@ export default function Contact() {
   });
 
   async function handleSubmit(values) {
-    console.log(values);
-    const { email, phone, name, message } = values;
-    const res = await axios.post(
-      " https://backend.getlinked.ai/hackathon/contact-form",
-      {
-        email,
-        phone_number: phone,
-        first_name: name,
-        message,
+    try {
+      setPending(true);
+      const { email, phone, name, message } = values;
+      const res = await axios.post(
+        " https://backend.getlinked.ai/hackathon/contact-form",
+        {
+          email,
+          phone_number: phone,
+          first_name: name,
+          message,
+        }
+      );
+
+      if (res) {
+        setPending(false);
+        console.log(res.data.first_name);
       }
-    );
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {
@@ -268,9 +278,9 @@ export default function Contact() {
                     >
                       <button
                         type="submit"
-                        className="btn primary-bg text-base"
+                        className="btn flex justify-center primary-bg text-base"
                       >
-                        Submit
+                        {pending ? <Spinner /> : "Submit"}
                       </button>
                     </div>
                   </form>

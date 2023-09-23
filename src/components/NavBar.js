@@ -4,28 +4,48 @@ import hamMenu from "public/icons/menu.svg";
 import close from "public/icons/cancel_btn.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function NavBar({regPage}) {
   const [openNav, setOpenNav] = useState(false);
+  const {asPath} = useRouter()
   const handleNav = () => {
     setOpenNav(!openNav);
   };
+
+  // console.log(asPath);
+  
 
   return (
     <>
       {/* Desktop Nav bar */}
       <nav className="lg:flex items-center hidden w-7/12 ">
         <ul className="flex text-base b-slate-900   justify-between w-full items-center">
-          <li>
+          <li
+            className={`${
+              asPath === "/#intro" ? "primary font-semibold" : ""
+            }`}
+          >
             <Link href="/#intro">Overview</Link>
           </li>
-          <li>
+          <li
+            className={`${
+              asPath === "/#timeline" ? "primary font-semibold" : ""
+            }`}
+          >
             <Link href="/#timeline">Timeline</Link>
           </li>
-          <li>
+
+          <li
+            className={`${asPath === "/#faq" ? "primary font-semibold" : ""}`}
+          >
             <Link href="/#faq">FAQs</Link>
           </li>
-          <li>
+          <li
+            className={`${
+              asPath === "/contact" ? "primary font-semibold" : ""
+            }`}
+          >
             <Link href="/contact">Contact</Link>
           </li>
           <Button regPage={regPage} />
@@ -74,16 +94,34 @@ export default function NavBar({regPage}) {
                 />
               </div>
               <ul className="flex flex-col space-y-2.5 text-base mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
-                <li>
+                <li
+                  className={`${
+                    asPath === "/#intro" ? "primary font-semibold" : ""
+                  }`}
+                >
                   <Link href="/#intro">Overview</Link>
                 </li>
-                <li>
+                <li
+                  className={`${
+                    asPath === "/#mobileTimeline"
+                      ? "primary font-semibold"
+                      : ""
+                  }`}
+                >
                   <Link href="/#mobileTimeline">Timeline</Link>
                 </li>
-                <li>
+                <li
+                  className={`${
+                    asPath === "/#faq" ? "primary font-semibold" : ""
+                  }`}
+                >
                   <Link href="/#faq">FAQs</Link>
                 </li>
-                <li className="">
+                <li
+                  className={`${
+                    asPath === "/contact" ? "primary font-semibold" : ""
+                  }`}
+                >
                   <Link href="/contact">Contact</Link>
                 </li>
                 <div className=" pt-4 w-full">

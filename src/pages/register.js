@@ -16,11 +16,14 @@ import grayStar from "public/gray_star.svg";
 import blueStar from "public/blue_star.svg";
 import Glow from "@/components/Glow";
 import Star from "@/components/Star";
+import Spinner from "@/components/Spinner";
+import SuccessMessage from "@/components/SuccessMessage";
 
 export default function Contact() {
   const router = useRouter();
   const [isFormValid, setIsFormValid] = useState(false);
   const [pending, setPending] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [categories, setCategories] = useState([]);
   const maxGroupSize = 10;
   const goBack = () => {
@@ -42,22 +45,31 @@ export default function Contact() {
   });
 
   async function handleSubmit(values) {
-    console.log(values);
-    const size = +values.size;
-    const { teamName, phone, topic, email, category, agreement } = values;
-    const response = await axios.post(
-      " https://backend.getlinked.ai/hackathon/registration",
-      {
-        team_name: teamName,
-        phone_number: phone,
-        project_topic: topic,
-        email,
-        category,
-        group_size: size,
-        privacy_poclicy_accepted: agreement,
+    setPending(true);
+    try {
+      const size = +values.size;
+      const { teamName, phone, topic, email, category, agreement } = values;
+      const response = await axios.post(
+        " https://backend.getlinked.ai/hackathon/registration",
+        {
+          team_name: teamName,
+          phone_number: phone,
+          project_topic: topic,
+          email,
+          category,
+          group_size: size,
+          privacy_poclicy_accepted: agreement,
+        }
+      );
+      if (response.data) {
+        setPending(false);
+        setShowSuccess(true)
+        // console.log(response);
       }
-    );
-    // console.log(response);
+    } catch (error) {
+      setPending(false);
+      // console.log(error);
+    }
   }
 
   //   "email":"sample@eexample.com",
@@ -134,10 +146,7 @@ export default function Contact() {
           </div>
           <div className="lg:flex">
             <div className="bg-blue-40 lg:w-1/2 items-center  flex justify-center ">
-              <div
-                // data-aos="zoom-in"
-                className="w-3/5 lg:w-full"
-              >
+              <div data-aos="zoom-in" className="w-3/5 lg:w-full">
                 <Image
                   src={register}
                   width={700}
@@ -151,7 +160,7 @@ export default function Contact() {
 
             {/* Form */}
 
-            <div className="bg-red-00 lg:mt0  lg:w-[617px] lg:py-10 px-4 lg:px-12 form-bg  ">
+            <div className="bg-red-00    lg:py-10 px-4 lg:px-12 form-bg  ">
               <div className="bg-reen-300  mx-auto ">
                 <div className="hidden lg:block">
                   <div
@@ -345,9 +354,9 @@ export default function Contact() {
                     >
                       <button
                         type="submit"
-                        className="btn lg:w-full primary-bg text-base"
+                        className="btn lg:w-full primary-bg text-base flex justify-center"
                       >
-                        Register Now
+                        {pending ? <Spinner /> : "Register Now"}
                       </button>
                     </div>
                   </form>
@@ -356,16 +365,19 @@ export default function Contact() {
             </div>
           </div>
           {/* stars */}
-          <div className="absolute right-10 bottom-[19%] w-2.5 lg:bottom-[25%] lg:left-[48%] lg:w-6">
+          <div className="absolute right-10 bottom-[19%] w-2.5 lg:bottom-[10%] lg:right-[54%] lg:w-4">
             <Star s={blueStar} h={32} w={26} />
           </div>
-          {/* <div className="absolute right-[6%] top-[70%] w-2.5 lg:top-[90%] lg:right-[0%] lg:w-6">
+          <div className="absolute right-[10%] top-[103%] w-2.5 hidden lg:block ">
             <Star s={whiteStar} h={32} w={26} />
-          </div> */}
-          <div className="absolute right-20 top-[22%] w-3 lg:top-[10%] lg:left-[12%] lg:w-5">
+          </div>
+          <div className="absolute right-20 top-[22%] w-3 lg:top-[30%] lg:left-[12%] lg:w-5">
             <Star s={purpleStar} h={32} w={26} />
           </div>
-          <div className="absolute left-4 top-[43.5%] w-3 lg:top-[3%] lg:right-[10%] lg:w-5">
+          <div className="absolute left-4 top-[43.5%] w-3 lg:top-[25%] lg:left-[80%] lg:w-4">
+            <Star s={grayStar} h={32} w={26} />
+          </div>
+          <div className="absolute left-36 bottom-10 hidden lg:block w-4 ">
             <Star s={grayStar} h={32} w={26} />
           </div>
         </section>
@@ -374,10 +386,11 @@ export default function Contact() {
         <div className=" mix-blend-hard-light bg-blend-hard-light  absolute top-[12%] -left-[8%]  -z-10 lg:bottom-60 lg:-left-16">
           <Glow />
         </div>
-        {/* <div className=" mix-blend-hard-light bg-blend-hard-light hidden lg:block absolute bottom-[50%] -right-[40%]  -z-10 lg:-bottom-[14%] lg:-right-48">
+        <div className=" mix-blend-hard-light bg-blend-hard-light hidden lg:block absolute top-[60%] -right-40  -z-10 ">
           <Glow />
-        </div> */}
+        </div>
       </div>
+      {showSuccess && <SuccessMessage />}
     </FormLayout>
   );
 }

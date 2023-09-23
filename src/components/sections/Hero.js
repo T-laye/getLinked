@@ -31,7 +31,7 @@ export default function Hero() {
                   .callFunction(() => {})
                   .pauseFor(2500)
                   .callFunction(() => {
-                    console.log("All strings were deleted");
+                    // console.log("All strings were deleted");
                   })
                   .start();
               }}
