@@ -77,7 +77,7 @@ export default function Hero() {
           <div
             // data-aos="zoom-in"
             data-aos-delay="500"
-            className=" mix-blend-hard-light bg-gree-400 slow-spin h-[150%] w-[150%] bg-blue300 absolute  -z-40  -right-[29%] -top-[34%] md:-top-[25%] lg:hidden flex justify-end bg-geen-300"
+            className=" mix-blend-hard-light bg-gree-400 slow-spin h-[150%] w-[150%] bg-blue300 absolute  -z-40  -right-[29%] -top-[28%] md:-top-[25%] lg:hidden flex justify-end bg-geen-300"
           >
             <Image
               src={globe}
