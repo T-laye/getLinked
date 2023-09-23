@@ -235,7 +235,7 @@ export default function Contact() {
                     <div className="mb-3">
                       <label htmlFor="email">Email</label>
                       <input
-                        type="tel"
+                        type="email"
                         placeholder="Enter your email address"
                         id="email"
                         name="email"
