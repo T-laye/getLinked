@@ -53,7 +53,7 @@ export default function Layout({ title, children }) {
           <Glow />
         </div>
       </header> */}
-      <main className="overflow-hidden pt-16">{children}</main>
+      <main className="overflow-hidden pt-16 md:pt-24 2xl:pt-36">{children}</main>
     </>
   );
 }
