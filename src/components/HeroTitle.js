@@ -7,7 +7,7 @@ import Button from "./Button";
 // import writeup from "public/images/Title.svg";
 
 export default function HeroTitle() {
-  const targetTime = new Date("2023-09-26T00:00:00Z");
+  const targetTime = new Date("2023-10-26T00:00:00Z");
   const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
 
   function calculateTimeRemaining() {
